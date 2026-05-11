@@ -1,0 +1,83 @@
+<h2>Tarjetas de experiencias — diseño final</h2>
+<p class="subtitle">Imagen grande a sangre, precio en overlay oscuro, botón "Reservar" prominente. Responsive: 2 columnas en desktop, 1 en móvil.</p>
+
+<div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 860px; margin: 24px auto;">
+
+  <!-- CARD 1: 30 min -->
+  <div style="position:relative; border-radius:16px; overflow:hidden; height:320px; cursor:pointer; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" alt="Jet ski en el mar de Cala Millor" style="width:100%; height:100%; object-fit:cover; display:block; transition: transform 0.4s ease;">
+    <!-- Gradient overlay -->
+    <div style="position:absolute; inset:0; background: linear-gradient(0deg, rgba(3,4,94,0.92) 0%, rgba(3,4,94,0.3) 50%, transparent 100%);"></div>
+    <!-- Badge top -->
+    <div style="position:absolute; top:14px; left:14px; background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.7rem; padding:5px 12px; border-radius:20px; letter-spacing:1px;">30 MIN</div>
+    <!-- Content bottom -->
+    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px;">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:#fff; margin-bottom:2px;">Ruta Básica</div>
+      <div style="font-family:'Open Sans',sans-serif; font-size:0.75rem; color:rgba(255,255,255,0.75); margin-bottom:10px;">Perfecta para empezar · Cala Millor</div>
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <span style="font-family:'Montserrat',sans-serif; font-size:0.7rem; color:rgba(255,255,255,0.6);">desde</span>
+          <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.6rem; color:#FF6B35; margin-left:4px;">60€</span>
+        </div>
+        <a href="#" style="background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.75rem; padding:10px 20px; border-radius:50px; text-decoration:none; letter-spacing:0.5px;">Reservar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2: 60 min -->
+  <div style="position:relative; border-radius:16px; overflow:hidden; height:320px; cursor:pointer; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+    <img src="https://images.unsplash.com/photo-1602139684435-82bf9c1b5e4c?w=600&q=80" alt="Pareja en jet ski Mallorca" style="width:100%; height:100%; object-fit:cover; display:block;">
+    <div style="position:absolute; inset:0; background: linear-gradient(0deg, rgba(3,4,94,0.92) 0%, rgba(3,4,94,0.3) 50%, transparent 100%);"></div>
+    <div style="position:absolute; top:14px; left:14px; background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.7rem; padding:5px 12px; border-radius:20px; letter-spacing:1px;">60 MIN · ⭐ POPULAR</div>
+    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px;">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:#fff; margin-bottom:2px;">Ruta Clásica</div>
+      <div style="font-family:'Open Sans',sans-serif; font-size:0.75rem; color:rgba(255,255,255,0.75); margin-bottom:10px;">La más elegida · Para parejas y amigos</div>
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <span style="font-family:'Montserrat',sans-serif; font-size:0.7rem; color:rgba(255,255,255,0.6);">desde</span>
+          <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.6rem; color:#FF6B35; margin-left:4px;">100€</span>
+        </div>
+        <a href="#" style="background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.75rem; padding:10px 20px; border-radius:50px; text-decoration:none; letter-spacing:0.5px;">Reservar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 3: Sunset -->
+  <div style="position:relative; border-radius:16px; overflow:hidden; height:320px; cursor:pointer; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Ruta sunset jet ski Mallorca" style="width:100%; height:100%; object-fit:cover; display:block;">
+    <div style="position:absolute; inset:0; background: linear-gradient(0deg, rgba(255,107,53,0.88) 0%, rgba(3,4,94,0.3) 50%, transparent 100%);"></div>
+    <div style="position:absolute; top:14px; left:14px; background:#03045E; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.7rem; padding:5px 12px; border-radius:20px; letter-spacing:1px;">🌅 SUNSET</div>
+    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px;">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:#fff; margin-bottom:2px;">Ruta Atardecer</div>
+      <div style="font-family:'Open Sans',sans-serif; font-size:0.75rem; color:rgba(255,255,255,0.85); margin-bottom:10px;">90 min · Una experiencia única al caer el sol</div>
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <span style="font-family:'Montserrat',sans-serif; font-size:0.7rem; color:rgba(255,255,255,0.7);">desde</span>
+          <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.6rem; color:#fff; margin-left:4px;">140€</span>
+        </div>
+        <a href="#" style="background:#fff; color:#FF6B35; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.75rem; padding:10px 20px; border-radius:50px; text-decoration:none; letter-spacing:0.5px;">Reservar →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 4: Privada (ocupa las 2 columnas) -->
+  <div style="position:relative; border-radius:16px; overflow:hidden; height:320px; cursor:pointer; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+    <img src="https://images.unsplash.com/photo-1591491747953-962d013f4876?w=600&q=80" alt="Excursión privada jet ski Mallorca grupo" style="width:100%; height:100%; object-fit:cover; display:block;">
+    <div style="position:absolute; inset:0; background: linear-gradient(0deg, rgba(3,4,94,0.95) 0%, rgba(3,4,94,0.4) 50%, transparent 100%);"></div>
+    <div style="position:absolute; top:14px; left:14px; background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.7rem; padding:5px 12px; border-radius:20px; letter-spacing:1px;">⭐ PACK ESPECIAL</div>
+    <div style="position:absolute; bottom:0; left:0; right:0; padding:20px;">
+      <div style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.15rem; color:#fff; margin-bottom:2px;">Excursión Privada</div>
+      <div style="font-family:'Open Sans',sans-serif; font-size:0.75rem; color:rgba(255,255,255,0.75); margin-bottom:10px;">2h + Sunset · Para grupos y ocasiones especiales</div>
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <span style="font-family:'Montserrat',sans-serif; font-size:0.7rem; color:rgba(255,255,255,0.6);">desde</span>
+          <span style="font-family:'Montserrat',sans-serif; font-weight:800; font-size:1.6rem; color:#FF6B35; margin-left:4px;">200€</span>
+        </div>
+        <a href="#" style="background:#FF6B35; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:0.75rem; padding:10px 20px; border-radius:50px; text-decoration:none; letter-spacing:0.5px;">Reservar →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="subtitle" style="text-align:center; font-size:0.8rem; margin-top:8px;">En móvil: 1 columna · En tablet: 2 columnas · Hover: zoom suave en la imagen</p>
