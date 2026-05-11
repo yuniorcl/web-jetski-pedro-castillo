@@ -28,3 +28,4 @@ jobs:
             **/.claude/**
             **/.superpowers/**
             **/prompt-init-creation.md
+            **/README.md
