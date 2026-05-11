@@ -32,3 +32,4 @@ jobs:
             **/.superpowers/**
             **/prompt-init-creation.md
             **/README.md
+            **/.forcebuild
