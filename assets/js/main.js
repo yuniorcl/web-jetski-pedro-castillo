@@ -47,8 +47,8 @@ function buildExpHref(expKey) {
   const title    = translations[`exp.${expKey}.title`]    || expKey;
   const price    = translations[`exp.${expKey}.price`]    || '';
   const msgLabel = currentLang === 'en'
-    ? `Hi, I'd like to book: ${title} (from ${price}). Can you confirm availability?`
-    : `Hola, me gustaría reservar: ${title} (desde ${price}). ¿Podéis confirmarme disponibilidad?`;
+    ? `Hi, I'd like to book: ${title} (${price}). Can you confirm availability?`
+    : `Hola, me gustaría reservar: ${title} (${price}). ¿Podéis confirmarme disponibilidad?`;
   return `https://api.whatsapp.com/send/?phone=${CONFIG.whatsapp}&text=${encodeURIComponent(msgLabel)}`;
 }
 
