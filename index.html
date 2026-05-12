@@ -3,16 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0b2a45">
   <title>Alquiler de Jet Ski en Cala Millor, Mallorca | JetExperience Baleares</title>
-  <meta name="description" content="Alquila una moto de agua en Cala Millor, Mallorca. Sin licencia, instructor incluido. Rutas de 30min, 60min, sunset y pack privado. Reserva fácil por WhatsApp.">
-  <link rel="canonical" href="https://mallorcajetski.com/">
+  <meta name="description" content="Alquila una moto de agua en Cala Millor, Mallorca. Con licencia náutica. Sea-Doo modernos, chaleco incluido. Rutas de 1h (140€) y 2h (200€). Reserva fácil por WhatsApp.">
+  <link rel="canonical" href="https://jetexperiencemallorca.com/">
+  <link rel="alternate" hreflang="es" href="https://jetexperiencemallorca.com/">
+  <link rel="alternate" hreflang="en" href="https://jetexperiencemallorca.com/">
+  <link rel="alternate" hreflang="x-default" href="https://jetexperiencemallorca.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="JetExperience Baleares">
   <meta property="og:title" content="Alquiler de Jet Ski en Cala Millor | JetExperience Baleares">
-  <meta property="og:description" content="Vive una experiencia única en el mar. Sin licencia, instructor incluido. Reserva por WhatsApp.">
-  <meta property="og:image" content="https://mallorcajetski.com/assets/img/og-image.jpg">
-  <meta property="og:url" content="https://mallorcajetski.com/">
+  <meta property="og:description" content="Vive una experiencia única en el mar. Con licencia náutica. Sea-Doo modernos, chaleco incluido. Reserva por WhatsApp.">
+  <meta property="og:image" content="https://jetexperiencemallorca.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://jetexperiencemallorca.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alquiler de Jet Ski en Cala Millor | JetExperience Baleares">
+  <meta name="twitter:description" content="Vive una experiencia única en el mar. Con licencia náutica. Sea-Doo modernos, chaleco incluido.">
+  <meta name="twitter:image" content="https://jetexperiencemallorca.com/assets/img/og-image.jpg">
 
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -31,6 +46,9 @@
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
+  <!-- Preload hero image (LCP) -->
+  <link rel="preload" as="image" href="assets/img/hero-1.jpg">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -40,35 +58,135 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "SportsActivityLocation"],
+        "@id": "https://jetexperiencemallorca.com/#business",
         "name": "JetExperience Baleares",
-        "description": "Alquiler de jet ski en Cala Millor, Mallorca. Sin licencia, instructor incluido.",
-        "url": "https://mallorcajetski.com",
-        "telephone": "+34600000000",
+        "description": "Alquiler de jet ski en Cala Millor, Mallorca. Se requiere licencia náutica. Sea-Doo modernos, chaleco incluido.",
+        "url": "https://jetexperiencemallorca.com",
+        "telephone": "+34618842609",
+        "email": "info@jetexperiencemallorca.com",
         "address": {
           "@type": "PostalAddress",
+          "streetAddress": "Avenida del Pinar 43",
           "addressLocality": "Cala Millor",
           "addressRegion": "Mallorca",
+          "postalCode": "07560",
           "addressCountry": "ES"
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 39.592,
-          "longitude": 3.385
+          "latitude": 39.63772620941041,
+          "longitude": 3.414527756053245
         },
+        "hasMap": "https://www.google.com/maps?q=39.63772620941041,3.414527756053245",
         "openingHours": "Mo-Su 09:00-20:00",
-        "priceRange": "€€"
+        "priceRange": "€€",
+        "currenciesAccepted": "EUR",
+        "image": "https://jetexperiencemallorca.com/assets/img/og-image.jpg",
+        "sameAs": [
+          "https://www.instagram.com/jetexperiencebaleares",
+          "https://www.facebook.com/jetexperiencebaleares"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "María G."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Experiencia increíble. Los monitores son muy profesionales y las motos son modernas. Sin duda repetiremos el año que viene."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "James T."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Amazing experience! The instructor was fantastic. Highly recommend for families visiting Mallorca."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Klaus M."},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Perfekt organisiert und super Spaß! Die Jetskis waren nagelneu und der Service war erstklassig."
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Alquiler Jet Ski 1 hora",
+            "description": "Experiencia popular para parejas y amigos. Requiere licencia náutica.",
+            "price": "140",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://jetexperiencemallorca.com/#experiencias"
+          },
+          {
+            "@type": "Offer",
+            "name": "Pack Especial Jet Ski 2 horas",
+            "description": "Para grupos y ocasiones especiales. Requiere licencia náutica.",
+            "price": "200",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://jetexperiencemallorca.com/#experiencias"
+          }
+        ]
       },
       {
-        "@type": "TouristAttraction",
-        "name": "Alquiler de Jet Ski en Cala Millor",
-        "description": "Experiencias en moto de agua sin licencia con instructor profesional en Cala Millor, Mallorca.",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Cala Millor",
-          "addressRegion": "Mallorca",
-          "addressCountry": "ES"
-        }
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Necesito licencia náutica para alquilar un jet ski en Mallorca?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El conductor debe tener licencia de navegación o titulación superior para poder pilotar el jet ski."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Pueden ir dos personas en una moto de agua?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, nuestras motos admiten hasta 3 personas por unidad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debo llevar para alquilar un jet ski en Cala Millor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bañador, crema solar y ganas de disfrutar. Nosotros ponemos el resto: chaleco salvavidas, briefing y moto de agua."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Desde qué edad se puede participar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Los menores de 18 años deben ir acompañados de un adulto. Recomendamos un mínimo de 12 años para subir en la moto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué pasa si hace mal tiempo el día de la reserva?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "En caso de condiciones meteorológicas adversas, reprogramamos sin coste adicional o te devolvemos el importe íntegro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo reservar un jet ski en Cala Millor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "La forma más rápida es por WhatsApp. También puedes llamarnos o enviarnos un formulario de contacto y te respondemos en menos de 2 horas."
+            }
+          }
+        ]
       }
     ]
   }
