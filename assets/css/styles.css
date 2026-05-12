@@ -776,6 +776,63 @@ img { max-width: 100%; height: auto; }
 .lightbox__close:hover { color: var(--color-cta); }
 
 /* =============================================
+   QR RESEÑA
+   ============================================= */
+.review-qr-block {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  padding-top: 40px;
+}
+.review-qr-label {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+.review-qr-img {
+  display: block;
+  margin: 0 auto 12px;
+  width: 148px;
+  height: 148px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 2px solid rgba(0,0,0,0.08);
+  padding: 8px;
+  background: #fff;
+}
+.review-qr-sub {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+.review-qr-or {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin: 10px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.review-qr-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-white);
+  color: var(--color-dark);
+  border: 2px solid var(--color-dark);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 10px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+}
+.review-qr-btn:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+/* =============================================
    TOOLTIP INFO ICON
    ============================================= */
 .exp-info-btn {
