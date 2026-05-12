@@ -701,27 +701,27 @@
               <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
 
               <div class="mb-3">
-                <label class="form-label fw-semibold" data-i18n="contact.form.name">Nombre</label>
-                <input type="text" name="name" class="form-control contact-input" required
+                <label for="contact-name" class="form-label fw-semibold" data-i18n="contact.form.name">Nombre</label>
+                <input id="contact-name" type="text" name="name" class="form-control contact-input" required
                   data-i18n-placeholder="contact.form.name" placeholder="Nombre">
                 <div class="invalid-feedback" data-i18n="contact.form.error.name">Por favor, indica tu nombre.</div>
               </div>
               <div class="mb-3">
-                <label class="form-label fw-semibold" data-i18n="contact.form.date">Fecha deseada</label>
-                <input type="date" name="date" class="form-control contact-input">
+                <label for="contact-date" class="form-label fw-semibold" data-i18n="contact.form.date">Fecha deseada</label>
+                <input id="contact-date" type="date" name="date" class="form-control contact-input">
                 <div class="invalid-feedback" data-i18n="contact.form.error.date">La fecha no puede ser anterior a hoy.</div>
               </div>
               <div class="mb-3">
-                <label class="form-label fw-semibold" data-i18n="contact.form.experience">Tipo de experiencia</label>
-                <select name="experience" class="form-select contact-input">
+                <label for="contact-experience" class="form-label fw-semibold" data-i18n="contact.form.experience">Tipo de experiencia</label>
+                <select id="contact-experience" name="experience" class="form-select contact-input">
                   <option value="" data-i18n="contact.form.experience">Tipo de experiencia</option>
                   <option value="classic" data-i18n="contact.form.exp.classic">Popular – 1h · 140€</option>
                   <option value="private" data-i18n="contact.form.exp.private">Pack Especial – 2h · 200€</option>
                 </select>
               </div>
               <div class="mb-4">
-                <label class="form-label fw-semibold" data-i18n="contact.form.message">Mensaje</label>
-                <textarea name="message" rows="4" class="form-control contact-input"
+                <label for="contact-message" class="form-label fw-semibold" data-i18n="contact.form.message">Mensaje</label>
+                <textarea id="contact-message" name="message" rows="4" class="form-control contact-input"
                   data-i18n-placeholder="contact.form.message" placeholder="Mensaje"></textarea>
               </div>
               <button type="submit" class="btn-cta w-100" data-i18n="contact.form.submit">Enviar por WhatsApp</button>
@@ -791,7 +791,7 @@
 
         <!-- Links rápidos -->
         <div class="footer-col">
-          <h4 class="footer-col__title" data-i18n="footer.links">Enlaces rápidos</h4>
+          <h3 class="footer-col__title" data-i18n="footer.links">Enlaces rápidos</h3>
           <a href="#hero" data-i18n="nav.home">Inicio</a>
           <a href="#experiencias" data-i18n="nav.prices">Tarifas</a>
           <a href="#galeria" data-i18n="nav.gallery">Galería</a>
@@ -800,7 +800,7 @@
 
         <!-- Contacto -->
         <div class="footer-col">
-          <h4 class="footer-col__title">Contacto</h4>
+          <h3 class="footer-col__title">Contacto</h3>
           <span data-i18n="contact.address">Avenida del Pinar #43, Costa de los Pinos, Cala Millor</span>
           <a data-phone href="#">+34 600 000 000</a>
           <span data-email></span>
@@ -808,7 +808,7 @@
 
         <!-- Redes sociales -->
         <div class="footer-col">
-          <h4 class="footer-col__title" data-i18n="footer.social">Síguenos</h4>
+          <h3 class="footer-col__title" data-i18n="footer.social">Síguenos</h3>
           <a href="https://www.instagram.com/jetexperiencebaleares" target="_blank" rel="noopener" class="social-link">
             <i class="bi bi-instagram"></i> @jetexperiencebaleares
           </a>
