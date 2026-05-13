@@ -1,0 +1,4 @@
+{"type":"server-started","port":58445,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:58445","screen_dir":"/Users/yuniorlopez/Documents/GitHub/web-jetski-pedro-castillo/.superpowers/brainstorm/7058-1778704092/content","state_dir":"/Users/yuniorlopez/Documents/GitHub/web-jetski-pedro-castillo/.superpowers/brainstorm/7058-1778704092/state"}
+{"type":"screen-added","file":"/Users/yuniorlopez/Documents/GitHub/web-jetski-pedro-castillo/.superpowers/brainstorm/7058-1778704092/content/oferta-card.html"}
+{"type":"screen-updated","file":"/Users/yuniorlopez/Documents/GitHub/web-jetski-pedro-castillo/.superpowers/brainstorm/7058-1778704092/content/oferta-card.html"}
+{"type":"server-stopped","reason":"idle timeout"}
