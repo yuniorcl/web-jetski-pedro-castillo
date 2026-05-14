@@ -262,8 +262,14 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 767px) {
   .hero-section { min-height: 100svh; }
-  .hero-content { text-align: center !important; }
+  .hero-content { text-align: center !important; padding: 0 12px; }
   .hero-ctas, .hero-badges { justify-content: center !important; }
+  .hero-title__location { white-space: normal; }
+  .hero-ctas { flex-direction: column; align-items: center; gap: 12px !important; }
+  .btn-cta, .btn-outline-light-brand { width: 100%; max-width: 300px; text-align: center; }
+  .hero-arrow { width: 36px; height: 36px; font-size: 1rem; }
+  .hero-arrow--prev { left: 8px; }
+  .hero-arrow--next { right: 8px; }
 }
 
 /* =============================================
