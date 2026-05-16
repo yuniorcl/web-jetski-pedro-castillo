@@ -538,12 +538,6 @@ img { max-width: 100%; height: auto; }
 .btn-whatsapp:hover { background: #1ebe5d; color: #fff; transform: translateY(-2px); }
 .btn-whatsapp svg { width: 15px; height: 15px; fill: #fff; }
 
-@media (max-width: 767px) {
-  .exp-card--offer { height: auto; background: #03045e; }
-  .exp-card--offer__img-wrap { position: relative; }
-  .exp-card--offer__img { height: auto; }
-}
-
 /* =============================================
    CARACTERÍSTICAS / CHECKLIST
    ============================================= */
