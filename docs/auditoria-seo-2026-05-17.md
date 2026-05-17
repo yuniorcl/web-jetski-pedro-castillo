@@ -84,7 +84,12 @@
 | galeria-11-new.jpg | 800×600 |
 | descarga.png (QR) | 132×132 |
 
----
+| ID | Problema | Impacto | Notas |
+|---|---|---|---|
+| I1 | hreflang ES y EN apuntan a la misma URL | Inglés no indexable | Decidir: crear URLs separadas o eliminar hreflang EN |
+| I2 | Imágenes sin `width` y `height` explícitos | CLS en Core Web Vitals | Afecta a todas las `<img>` del HTML |
+| I3 | `galeria-10.png` a 440 KB sin convertir | Peso excesivo en galería | Convertir a WebP/AVIF |
+| I9 | Imágenes del lightbox no lazy-loaded | ~1.4 MB descarga innecesaria | Añadir `loading="lazy"` o cargar bajo demanda |
 
 ## Oportunidades de posicionamiento
 
