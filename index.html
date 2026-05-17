@@ -29,19 +29,20 @@
   <meta property="og:site_name" content="JetExperience Baleares">
   <meta property="og:title" content="Alquiler de Jet Ski en Cala Millor | JetExperience Baleares">
   <meta property="og:description" content="Vive una experiencia única en el mar. Con licencia náutica. Sea-Doo modernos, chaleco incluido. Reserva por WhatsApp.">
-  <meta property="og:image" content="https://jetexperiencemallorca.com/assets/img/og-image.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://jetexperiencemallorca.com/assets/img/galeria-08-new.jpg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="450">
   <meta property="og:url" content="https://jetexperiencemallorca.com/">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Alquiler de Jet Ski en Cala Millor | JetExperience Baleares">
   <meta name="twitter:description" content="Vive una experiencia única en el mar. Con licencia náutica. Sea-Doo modernos, chaleco incluido.">
-  <meta name="twitter:image" content="https://jetexperiencemallorca.com/assets/img/og-image.jpg">
+  <meta name="twitter:image" content="https://jetexperiencemallorca.com/assets/img/galeria-08-new.jpg">
 
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons (non-render-blocking) -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
 
   <!-- Bootstrap 5.3.3 SRI -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -93,7 +94,7 @@
         "openingHours": "Mo-Su 09:00-20:00",
         "priceRange": "€€",
         "currenciesAccepted": "EUR",
-        "image": "https://jetexperiencemallorca.com/assets/img/og-image.jpg",
+        "image": "https://jetexperiencemallorca.com/assets/img/galeria-08-new.jpg",
         "sameAs": [
           "https://www.instagram.com/jetexperiencebaleares",
           "https://www.facebook.com/jetexperiencebaleares"
@@ -101,28 +102,40 @@
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "5",
-          "reviewCount": "3",
+          "reviewCount": "5",
           "bestRating": "5",
           "worstRating": "1"
         },
         "review": [
           {
             "@type": "Review",
-            "author": {"@type": "Person", "name": "María G."},
+            "author": {"@type": "Person", "name": "Mar Castillo"},
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Experiencia increíble. Los monitores son muy profesionales y las motos son modernas. Sin duda repetiremos el año que viene."
+            "reviewBody": "Una experiencia increíble de principio a fin. Las motos de agua estaban en perfecto estado, nuevas de este año. Me lo pasé muchísimo mejor de lo que esperaba y sin duda repetiría. Pedro fue quien nos trajo las motos, un auténtico encanto, súper amable y muy cercano desde el primer momento."
           },
           {
             "@type": "Review",
-            "author": {"@type": "Person", "name": "James T."},
+            "author": {"@type": "Person", "name": "Mario Gonzalez"},
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Amazing experience! The instructor was fantastic. Highly recommend for families visiting Mallorca."
+            "reviewBody": "Una experiencia única, nunca habíamos montado en motos de agua y seguro que repetiremos. Fuimos por libre a ver las calas más bonitas, fue único. Pedro fue quien nos atendió, muy amable. ¡Muchas gracias por todo!"
           },
           {
             "@type": "Review",
-            "author": {"@type": "Person", "name": "Klaus M."},
+            "author": {"@type": "Person", "name": "Saray Borrego"},
             "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-            "reviewBody": "Perfekt organisiert und super Spaß! Die Jetskis waren nagelneu und der Service war erstklassig."
+            "reviewBody": "Excelente servicio, motos súper modernas con altavoces. Disfruté mucho la experiencia, sin duda repetiré."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Malena Lopez"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Amazing experience!!! I will definitely do it again."
+          },
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Maria Mateos"},
+            "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
+            "reviewBody": "Fue una experiencia increíble con personas maravillosas y muy atentas. Recomiendo mucho la experiencia y el equipo."
           }
         ],
         "offers": [
@@ -140,6 +153,15 @@
             "name": "Pack Especial Jet Ski 2 horas",
             "description": "Para grupos y ocasiones especiales. Requiere licencia náutica.",
             "price": "200",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://jetexperiencemallorca.com/#experiencias"
+          },
+          {
+            "@type": "Offer",
+            "name": "Oferta Especial: Curso Licencia Náutica + 2h Jet Ski",
+            "description": "Pack completo: curso de licencia náutica homologada más 2 horas de alquiler de moto de agua en Cala Millor, Mallorca.",
+            "price": "260",
             "priceCurrency": "EUR",
             "availability": "https://schema.org/InStock",
             "url": "https://jetexperiencemallorca.com/#experiencias"
@@ -205,9 +227,8 @@
 </head>
 <body>
 
-  <main id="main-content">
-    <!-- ===== HEADER ===== -->
-    <header id="site-header" class="site-header">
+  <!-- ===== HEADER ===== -->
+  <header id="site-header" class="site-header">
       <div class="container-fluid px-4">
         <nav class="navbar navbar-expand-lg p-0">
 
@@ -246,8 +267,9 @@
 
         </nav>
       </div>
-    </header>
+  </header>
 
+  <main id="main-content">
     <!-- ===== HERO ===== -->
     <section id="hero" class="hero-section">
 
@@ -690,6 +712,7 @@
             <div class="map-wrapper">
               <iframe
                 data-maps-embed
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196635.93878450102!2d2.8838303093940323!3d39.63988895584924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12963f4c3087a2ff%3A0x6cea15f041fc2041!2sJetExperience%20Baleares!5e0!3m2!1ses!2ses!4v1778668418112!5m2!1ses!2ses"
                 width="100%"
                 height="400"
                 style="border:0; border-radius:16px;"
@@ -702,13 +725,13 @@
             <div class="contact-info mt-4">
               <div class="contact-info__item">
                 <span>📍</span>
-                <span data-i18n="contact.address">Avenida del Pinar #43, Costa de los Pinos, Cala Millor</span>
+                <span data-i18n="contact.address">Avenida del Pinar 43, Costa de los Pinos, Cala Millor</span>
               </div>
               <div class="contact-info__item">
                 <span>✉️</span>
-                <span data-email class="contact-link"></span>
+                <span data-email class="contact-link">info@jetexperiencemallorca.com</span>
               </div>
-              <a data-maps-url href="#" class="btn-cta mt-3 d-inline-block" data-i18n="contact.howto">Cómo llegar</a>
+              <a data-maps-url href="https://share.google/Q987VDnOacnBXAkCH" class="btn-cta mt-3 d-inline-block" data-i18n="contact.howto">Cómo llegar</a>
             </div>
           </div>
 
@@ -718,6 +741,8 @@
             <form class="contact-form" id="contact-form" novalidate>
               <!-- Honeypot -->
               <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+              <!-- Phone hidden: contact always via WhatsApp -->
+              <input type="hidden" name="phone" id="contact-phone" value="WhatsApp">
 
               <div class="mb-3">
                 <label for="contact-name" class="form-label fw-semibold" data-i18n="contact.form.name">Nombre</label>
@@ -772,26 +797,40 @@
         <span class="section-label" data-i18n="reviews.label">Opiniones</span>
         <h2 class="section-title" data-i18n="reviews.title">Lo que dicen de nosotros</h2>
       </div>
-      <div class="row g-4">
-        <div class="col-md-4">
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-4">
           <div class="review-card">
             <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Experiencia increíble. Los monitores son muy profesionales y las motos son modernas. Sin duda repetiremos el año que viene."</p>
-            <div class="review-author">— María G., Barcelona</div>
+            <p class="review-text">"Una experiencia increíble de principio a fin. Las motos de agua estaban en perfecto estado, nuevas de este año. Me lo pasé muchísimo mejor de lo que esperaba y sin duda repetiría. Pedro fue quien nos trajo las motos, un auténtico encanto."</p>
+            <div class="review-author">— Mar C., Mallorca</div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-4">
           <div class="review-card">
             <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Amazing experience! No licence needed and the instructor was fantastic. Highly recommend for families visiting Mallorca."</p>
-            <div class="review-author">— James T., London</div>
+            <p class="review-text">"Una experiencia única, nunca habíamos montado en motos de agua y seguro que repetiremos. Fuimos por libre a ver las calas más bonitas, fue único. Pedro fue quien nos atendió, muy amable. ¡Muchas gracias por todo!"</p>
+            <div class="review-author">— Mario G., España</div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-4">
           <div class="review-card">
             <div class="review-stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Perfekt organisiert und super Spaß! Die Jetskis waren nagelneu und der Service war erstklassig. Absolut empfehlenswert!"</p>
-            <div class="review-author">— Klaus M., München</div>
+            <p class="review-text">"Excelente servicio, motos súper modernas con altavoces. Disfruté mucho la experiencia, sin duda repetiré."</p>
+            <div class="review-author">— Saray B., España</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Amazing experience!!! I will definitely do it again."</p>
+            <div class="review-author">— Malena L.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Fue una experiencia increíble con personas maravillosas y muy atentas. Recomiendo mucho la experiencia y el equipo."</p>
+            <div class="review-author">— Maria M., España</div>
           </div>
         </div>
       </div>
@@ -839,9 +878,11 @@
         <!-- Contacto -->
         <div class="footer-col">
           <h3 class="footer-col__title">Contacto</h3>
-          <span data-i18n="contact.address">Avenida del Pinar #43, Costa de los Pinos, Cala Millor</span>
-          <a data-phone href="#">+34 600 000 000</a>
-          <span data-email></span>
+          <address style="font-style:normal;">
+            <span data-i18n="contact.address">Avenida del Pinar 43, Costa de los Pinos, Cala Millor</span>
+            <a data-phone href="tel:+34618842609">+34 618 842 609</a>
+            <span data-email>info@jetexperiencemallorca.com</span>
+          </address>
         </div>
 
         <!-- Redes sociales -->
@@ -857,7 +898,7 @@
       </div>
 
       <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2025 JetExperience Baleares. Todos los derechos reservados.</span>
+        <span data-i18n="footer.copyright">© 2026 JetExperience Baleares. Todos los derechos reservados.</span>
         <div class="footer-legal-links">
           <a href="legal/aviso-legal.html" data-i18n="footer.legal">Aviso legal</a>
           <a href="legal/politica-privacidad.html" data-i18n="footer.privacy">Política de privacidad</a>
