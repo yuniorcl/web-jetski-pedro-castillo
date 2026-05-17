@@ -58,8 +58,8 @@
   "feat.fuel": "Gasolina",
   "feat.deposit": "Fianza en el momento de la entrega",
   "fleet.label": "Nuestra flota",
-  "fleet.title": "Motos Acuáticas en Costa de los Pinos - Cala Millor",
-  "fleet.desc": "Contamos con motos de agua modernas, potentes y seguras. Perfectas para principiantes y experimentados. Revisadas diariamente para garantizar tu seguridad.",
+  "fleet.title": "Alquiler de Jet Ski en Costa de los Pinos, Cala Millor",
+  "fleet.desc": "Alquila una moto de agua directamente en Costa de los Pinos, una de las zonas más privilegiadas de la costa levantina de Mallorca. Navega por aguas cristalinas frente a Cala Bona, Sa Coma y Porto Cristo a bordo de nuestras Sea-Doo, las motos más modernas del mercado. Revisadas diariamente y listas para que disfrutes al máximo.",
   "fleet.spec1.title": "Casco ST3 Hull™",
   "fleet.spec1.sub": "Fibra de vidrio",
   "fleet.spec2.title": "Sistema iTC™",
@@ -112,7 +112,7 @@
   "gallery.title": "Momentos únicos",
   "contact.label": "Contacto",
   "contact.title": "¿Dónde estamos?",
-  "contact.address": "Avenida del Pinar #43, Costa de los Pinos, Cala Millor",
+  "contact.address": "Avenida del Pinar 43, Costa de los Pinos, Cala Millor",
   "contact.howto": "Cómo llegar",
   "contact.form.title": "¿Hablamos?",
   "contact.form.name": "Nombre",
@@ -134,5 +134,5 @@
   "footer.links": "Enlaces rápidos",
   "footer.legal": "Aviso legal",
   "footer.privacy": "Política de privacidad",
-  "footer.copyright": "© 2025 JetExperience Baleares. Todos los derechos reservados."
+  "footer.copyright": "© 2026 JetExperience Baleares. Todos los derechos reservados."
 }
