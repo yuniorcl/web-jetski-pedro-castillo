@@ -98,19 +98,16 @@ function initContactForm() {
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    const nameInput  = form.querySelector('[name="name"]');
-    const phoneInput = form.querySelector('[name="phone"]');
-    const name  = nameInput.value.trim();
-    const phone = phoneInput.value.trim();
-    const date  = dateInput.value;
+    const nameInput = form.querySelector('[name="name"]');
+    const name = nameInput.value.trim();
+    const date = dateInput.value;
     const dateInvalid = date && date < todayStr;
 
     nameInput.classList.toggle('is-invalid', !name);
-    phoneInput.classList.toggle('is-invalid', !phone);
     dateInput.classList.toggle('is-invalid', dateInvalid);
 
-    if (!name || !phone || dateInvalid) {
-      (!name ? nameInput : !phone ? phoneInput : dateInput).focus();
+    if (!name || dateInvalid) {
+      (!name ? nameInput : dateInput).focus();
       return;
     }
 
@@ -120,7 +117,6 @@ function initContactForm() {
 
     const lines = ['Hola, me gustaría reservar una experiencia de jet ski:'];
     lines.push(`• Nombre: ${name}`);
-    lines.push(`• Teléfono: ${phone}`);
     if (date)             lines.push(`• Fecha: ${date}`);
     if (experience.value) lines.push(`• Experiencia: ${expText}`);
     if (message)          lines.push(`• Mensaje: ${message}`);

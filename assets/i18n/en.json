@@ -58,8 +58,8 @@
   "feat.fuel": "Fuel",
   "feat.deposit": "Security deposit upon delivery",
   "fleet.label": "Our fleet",
-  "fleet.title": "Jet Skis in Costa de los Pinos - Cala Millor",
-  "fleet.desc": "Modern, powerful and safe jet skis. Perfect for beginners and experienced riders. Checked daily to ensure your safety.",
+  "fleet.title": "Jet Ski Rental in Costa de los Pinos, Cala Millor",
+  "fleet.desc": "Rent a jet ski directly in Costa de los Pinos, one of the most privileged areas on the east coast of Mallorca. Ride crystal-clear waters off Cala Bona, Sa Coma and Porto Cristo on our Sea-Doo — the most modern jet skis on the market. Checked daily so you can make the most of every minute on the water.",
   "fleet.spec1.title": "ST3 Hull™ Shell",
   "fleet.spec1.sub": "Fibreglass",
   "fleet.spec2.title": "iTC™ System",
@@ -112,7 +112,7 @@
   "gallery.title": "Unique moments",
   "contact.label": "Contact",
   "contact.title": "Where to find us",
-  "contact.address": "Avenida del Pinar #43, Costa de los Pinos, Cala Millor",
+  "contact.address": "Avenida del Pinar 43, Costa de los Pinos, Cala Millor",
   "contact.howto": "Get directions",
   "contact.form.title": "Get in touch",
   "contact.form.name": "Name",
@@ -134,5 +134,5 @@
   "footer.links": "Quick links",
   "footer.legal": "Legal notice",
   "footer.privacy": "Privacy policy",
-  "footer.copyright": "© 2025 JetExperience Baleares. All rights reserved."
+  "footer.copyright": "© 2026 JetExperience Baleares. All rights reserved."
 }

@@ -1,9 +1,9 @@
 # Auditoría SEO Técnica — JetExperience Baleares
-**Fecha:** 17 mayo 2026 | **Estado:** pendiente de corrección
+**Fecha:** 17 mayo 2026 | **Última revisión:** 17 mayo 2026
 
 ---
 
-## Puntuaciones
+## Puntuaciones iniciales
 
 | Área | Puntuación |
 |---|---|
@@ -15,84 +15,90 @@
 
 ---
 
-## Problemas Críticos 🔴
+## Resuelto ✅
 
-| ID | Problema | Impacto |
+| ID | Problema | Commit |
 |---|---|---|
-| C1 | `og-image.jpg` no existe en el servidor | Social sharing roto, schema inválido |
-| C2 | `hero-2.jpg` pesa 1.4 MB | LCP destruido en móvil |
-| C3 | Teléfono, email y Maps inyectados por JS | NAP invisible a crawlers |
-| C4 | Bug en formulario: campo `phone` inexistente en HTML | Formulario no funciona |
-| C5 | `<header>` dentro de `<main>` | Semántica HTML5 incorrecta |
-| C6 | Reseña de James T. dice "No licence needed" | Contradicción con el servicio (requiere licencia) |
+| C1 | og-image.jpg inexistente → apunta a `galeria-08-new.jpg` | `ea7b3c4` |
+| C2 | `hero-2.jpg` 1.4 MB → comprimido a 816 KB (1920×1280, q75) | `cb0d2e3` |
+| C3 | NAP (email, teléfono, Maps) inyectado por JS → valores reales en HTML | `83bdf90` |
+| C4 | Bug formulario: campo `phone` inexistente en JS → eliminado de validación | `83bdf90` |
+| C5 | `<header>` dentro de `<main>` → movido como hijo directo de `<body>` | `fa4b870` |
+| C6 | Reseña falsa "No licence needed" → eliminada y reemplazada por reales | `9f42dc1` |
+| I3 | `galeria-10.png` 440 KB → convertido a JPEG 92 KB | `f75554e` |
+| I5 | Bootstrap Icons CSS render-blocking → cargado non-blocking vía preload | `d06adf2` |
+| I6 | Oferta especial 260€ ausente en Schema.org → añadida a `offers` | `d06adf2` |
+| I7 | Copyright © 2025 → actualizado a 2026 (HTML + i18n ES/EN) | `45ce609` `480e1de` |
+| I8 | NAP inconsistente (`#43` vs `43`) → estandarizado en HTML, JS e i18n | `344aa10` `77979d4` |
+| I9 | Imágenes lightbox sin lazy-load → `loading="lazy"` añadido a las 12 | `91eb542` |
+| I10 | `reviewCount: 3` en schema → actualizado a 5 | `9f42dc1` |
+| R1 | Botón flotante WhatsApp con animación pulse | `64b7c18` |
+| R5 | Keyword "excursiones" → sustituida por "alquiler jet ski Costa de los Pinos" con H2 y texto descriptivo | `77979d4` |
+| R6 | Dirección en footer sin semántica → envuelta en `<address>` HTML5 | `81c000b` |
+| R7 | 13 assets duplicados/sin uso → eliminados (−2.1 MB) | `70dab71` |
 
 ---
 
-## Problemas Importantes 🟡
+## Pendiente 🔲
 
-| ID | Problema | Impacto |
+### Importante 🟡
+
+| ID | Problema | Impacto | Notas |
+|---|---|---|---|
+| I1 | hreflang ES y EN apuntan a la misma URL | Inglés no indexable | Decidir: crear URLs separadas o eliminar hreflang EN |
+| I2 | Imágenes sin `width` y `height` explícitos | CLS en Core Web Vitals | Dimensiones ya recogidas, pendiente añadir al HTML |
+
+### Mejoras 🔵
+
+| ID | Mejora | Impacto |
 |---|---|---|
-| I1 | hreflang ES y EN apuntan a la misma URL | Inglés no indexable |
-| I2 | Imágenes sin `width` y `height` explícitos | CLS en Core Web Vitals |
-| I3 | `galeria-10.png` (440 KB) y `galeria-11.png` (344 KB) en PNG | Peso excesivo, sin formato moderno |
-| I4 | `tarifa-basica.avif` (552 KB) y `tarifa-clasica.avif` (460 KB) | AVIF demasiado pesado |
-| I5 | Bootstrap Icons CSS desde CDN sin preload | Posible render-blocking |
-| I6 | Oferta especial 260€ ausente en Schema.org `offers` | No aparece en rich snippets de precio |
-| I7 | Copyright dice © 2025 | Desactualizado (año actual: 2026) |
-| I8 | NAP inconsistente: schema usa `43`, HTML usa `#43` | Señal de entidad local débil |
-| I9 | Imágenes de lightbox no lazy-loaded | ~1.4 MB de descarga innecesaria |
-| I10 | AggregateRating con solo 3 reviews | Puede no activar rich snippets de estrellas |
+| R2 | Tipo `TouristAttraction` en Schema.org | Visibilidad en Knowledge Graph |
+| R3 | `<picture>` con `srcset` responsive | Reducir peso en móvil hasta 60% |
+| R4 | Hero images completas en sitemap de imágenes | Indexación de `hero-2.jpg` y `hero-3.jpg` |
 
 ---
 
-## Mejoras Recomendadas 🔵
+## Dimensiones recogidas para I2
 
-| ID | Mejora |
+| Imagen | Dimensiones |
 |---|---|
-| R1 | Añadir botón flotante de WhatsApp |
-| R2 | Añadir tipo `TouristAttraction` al schema |
-| R3 | Usar `<picture>` con `srcset` para imágenes responsive |
-| R4 | Incluir hero images en el sitemap de imágenes |
-| R5 | Añadir sección de contenido orientada a "excursiones" y "rutas" |
-| R6 | Envolver dirección en footer con `<address>` HTML5 |
-| R7 | Limpiar assets duplicados (`*-new.jpg` vs `.avif` antiguos) |
+| logo.jpeg | 1254×1254 |
+| servicio-01.avif | 1920×1483 |
+| servicio-02-new.jpg | 800×533 |
+| servicio-03.avif | 1920×1483 |
+| servicio-04.avif | 1100×619 |
+| galeria-12-new.jpg | 800×533 |
+| galeria-01-new.jpg | 800×532 |
+| oferta-especial.jpg | 1024×1355 |
+| jetski_seadoo.webp | 1280×960 |
+| fleet-01.avif | 661×480 |
+| galeria-02.jpeg | 525×360 |
+| galeria-03.jpg | 700×525 |
+| galeria-04.jpg | 803×499 |
+| galeria-05.jpg | 490×281 |
+| galeria-06.jpg | 1024×725 |
+| galeria-07-new.jpg | 800×533 |
+| galeria-08-new.jpg | 800×450 |
+| galeria-09.jpg | 300×168 |
+| galeria-10.jpg | 1024×683 |
+| galeria-11-new.jpg | 800×600 |
+| descarga.png (QR) | 132×132 |
 
----
+| ID | Problema | Impacto | Notas |
+|---|---|---|---|
+| I1 | hreflang ES y EN apuntan a la misma URL | Inglés no indexable | Decidir: crear URLs separadas o eliminar hreflang EN |
+| I2 | Imágenes sin `width` y `height` explícitos | CLS en Core Web Vitals | Afecta a todas las `<img>` del HTML |
+| I3 | `galeria-10.png` a 440 KB sin convertir | Peso excesivo en galería | Convertir a WebP/AVIF |
+| I9 | Imágenes del lightbox no lazy-loaded | ~1.4 MB descarga innecesaria | Añadir `loading="lazy"` o cargar bajo demanda |
 
-## Fortalezas Detectadas ✅
+## Oportunidades de posicionamiento
 
-- Schema.org completo: `LocalBusiness`, `SportsActivityLocation`, `FAQPage`, `Review`, `AggregateRating`, `Offer`, coordenadas GPS, horarios
-- FAQPage sincronizada con el accordion → activa rich snippet en Google
-- Preload correcto del LCP (`hero-1.jpg`)
-- Preconnect a Google Fonts con `crossorigin`
-- `robots.txt` y `sitemap.xml` correctos con extensión de imágenes
-- SRI (integrity) en Bootstrap desde CDN
-- Conversión por WhatsApp con mensaje preformateado por tarifa
-- GA4 configurado con `async`
-- Lightbox CSS puro sin dependencias JS
-
----
-
-## Oportunidades de Posicionamiento
-
-| Keyword | Potencial | Motivo |
+| Keyword | Potencial | Estado |
 |---|---|---|
-| `jet ski cala millor` | **Muy alto** | Keyword específica, menos competencia, schema con dirección exacta |
-| `alquiler jet ski mallorca` | **Alto** | Bien posicionada en title, H2 y schema. Necesita velocidad y más reseñas |
-| `excursiones jet ski mallorca` | **Bajo** | El contenido habla de "alquiler", no de "excursiones". Necesita sección específica |
+| `jet ski cala millor` | **Muy alto** | Schema con dirección exacta ✅ — velocidad resuelta ✅ |
+| `alquiler jet ski mallorca` | **Alto** | Title, H2, schema ✅ — pendiente más reseñas reales |
+| `alquiler jet ski Costa de los Pinos` | **Alto** | H2 y texto descriptivo añadidos ✅ |
 
 ---
 
-## Conclusión
-
-La arquitectura base es sólida pero hay **tres bloqueantes inmediatos**:
-
-1. **Formulario roto** (C4) — pérdida directa de conversiones
-2. **hero-2.jpg a 1.4 MB** (C2) — LCP > 4s en móvil, penalización en ranking
-3. **og-image.jpg inexistente** (C1) — social sharing roto
-
-Resolviendo los críticos + añadir botón flotante WhatsApp, el sitio puede competir en top 5 local para `jet ski cala millor` y top 10 para `alquiler jet ski mallorca`.
-
----
-
-*Auditoría generada el 17/05/2026 — revisión del repositorio en rama `feature/new-offering`*
+*Auditoría iniciada: 17/05/2026 — rama `feature/update-ceo-and-reviews`*
