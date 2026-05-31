@@ -25,6 +25,9 @@ jobs:
 
       - name: Install & Build
         run: npm ci && npm run build
+        env:
+          npm_config_registry: https://registry.npmjs.org/
+          npm_config_always_auth: 'false'
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
