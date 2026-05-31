@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "cala-millor",
+    "name": "Cala Millor",
+    "title": "Alquiler de Jet Ski en Cala Millor, Mallorca | JetExperience Baleares",
+    "description": "Alquila una moto de agua en Cala Millor, Mallorca. Salida directa desde Costa de los Pinos. Sea-Doo modernos, chaleco incluido. Reserva fácil por WhatsApp.",
+    "h1": "Alquiler de Jet Ski en Cala Millor, Mallorca",
+    "intro1": "Cala Millor es uno de los destinos turísticos más populares de la costa levantina de Mallorca, con más de 1,5 km de playa de arena dorada. Sus aguas tranquilas y poco profundas la convierten en el escenario perfecto para disfrutar de una experiencia en moto de agua, tanto si es tu primera vez como si ya tienes experiencia.",
+    "intro2": "Desde nuestra base en Costa de los Pinos, llegamos directamente a tu zona de baño con nuestras Sea-Doo. Solo necesitas licencia náutica y ganas de disfrutar el Mediterráneo.",
+    "highlight": "Navega frente a sus 1,5 km de playa dorada con aguas tranquilas y poca corriente.",
+    "features": [
+      "Aguas tranquilas, ideal para principiantes con licencia náutica",
+      "Playa de 1,5 km con arena dorada y fondo visible",
+      "Zona de navegación amplia, sin obstáculos"
+    ],
+    "faq": [
+      {
+        "q": "¿Dónde sale el jet ski en Cala Millor?",
+        "a": "Nuestra base está en Avenida del Pinar 43, Costa de los Pinos, a menos de 1 km de la playa de Cala Millor. También hacemos entrega directamente en la playa si lo prefieres."
+      },
+      {
+        "q": "¿Las aguas de Cala Millor son aptas para principiantes?",
+        "a": "Sí. Cala Millor tiene aguas tranquilas y bien protegidas, ideales para quien pilota por primera vez. Siempre con licencia náutica obligatoria y briefing de seguridad incluido."
+      }
+    ],
+    "geo": { "lat": 39.5878, "lng": 3.3947 },
+    "image": "galeria-03.jpg",
+    "imageAlt": "Playa de Cala Millor vista desde el mar, Mallorca"
+  },
+  {
+    "slug": "cala-bona",
+    "name": "Cala Bona",
+    "title": "Alquiler de Jet Ski en Cala Bona, Mallorca | JetExperience Baleares",
+    "description": "Alquila una moto de agua en Cala Bona, Mallorca. A 1 km de nuestra base en Costa de los Pinos. Sea-Doo modernos, chaleco incluido. Reserva por WhatsApp.",
+    "h1": "Alquiler de Jet Ski en Cala Bona, Mallorca",
+    "intro1": "Cala Bona es un pequeño y pintoresco puerto pesquero a apenas 1 km de Cala Millor. Sus aguas azules y su entorno más íntimo la convierten en una de las salidas favoritas de nuestros clientes. Navegar frente a Cala Bona combina la emoción del jet ski con unas vistas privilegiadas de la sierra de Llevant.",
+    "intro2": "Nuestra base en Costa de los Pinos está a menos de 5 minutos navegando, lo que hace de Cala Bona uno de los puntos de inicio más cómodos para tu experiencia.",
+    "highlight": "Puerto natural íntimo con aguas azules y vistas a la sierra de Llevant.",
+    "features": [
+      "Puerto natural protegido, aguas en calma",
+      "Entorno más íntimo y menos masificado que Cala Millor",
+      "A 1 km de nuestra base — llegamos en minutos"
+    ],
+    "faq": [
+      {
+        "q": "¿Puedo reservar el jet ski directamente en Cala Bona?",
+        "a": "Sí. Contacta por WhatsApp e indicamos el punto de encuentro exacto en Cala Bona. El servicio incluye entrega y recogida en el lugar acordado."
+      },
+      {
+        "q": "¿Cuánto tarda en llegar el servicio a Cala Bona?",
+        "a": "Nuestra base está a menos de 1 km de Cala Bona. Confirmamos hora de encuentro al reservar y llegamos puntualmente."
+      }
+    ],
+    "geo": { "lat": 39.6005, "lng": 3.4167 },
+    "image": "galeria-05.jpg",
+    "imageAlt": "Aguas cristalinas en Cala Bona, Mallorca"
+  },
+  {
+    "slug": "sa-coma",
+    "name": "Sa Coma",
+    "title": "Alquiler de Jet Ski en Sa Coma, Mallorca | JetExperience Baleares",
+    "description": "Alquila una moto de agua en Sa Coma, Mallorca. Aguas cristalinas a 2 km de nuestra base. Sea-Doo modernos, chaleco incluido. Reserva fácil por WhatsApp.",
+    "h1": "Alquiler de Jet Ski en Sa Coma, Mallorca",
+    "intro1": "Sa Coma es una playa natural menos masificada que sus vecinas, con aguas cristalinas y fondos de arena blanca. A tan solo 2 km navegando desde nuestra base, es ideal para quienes buscan explorar la costa este de Mallorca con total libertad.",
+    "intro2": "Sus aguas tranquilas y limpias hacen de Sa Coma una de las rutas más disfrutadas por nuestros clientes. Un entorno natural donde la moto de agua encaja a la perfección.",
+    "highlight": "Playa natural de arena blanca con aguas cristalinas y poca afluencia turística.",
+    "features": [
+      "Playa natural, menos masificada y más tranquila",
+      "Aguas cristalinas con fondos de arena blanca",
+      "A 2 km navegando desde nuestra base"
+    ],
+    "faq": [
+      {
+        "q": "¿Se puede hacer jet ski en Sa Coma?",
+        "a": "Sí. Sa Coma es una de nuestras zonas de navegación habituales. El servicio incluye entrega en el punto de la playa que prefieras."
+      },
+      {
+        "q": "¿Qué distancia hay entre Sa Coma y vuestra base?",
+        "a": "Aproximadamente 2 km navegando desde Costa de los Pinos. En moto de agua se alcanza en pocos minutos."
+      }
+    ],
+    "geo": { "lat": 39.6112, "lng": 3.4178 },
+    "image": "galeria-06.jpg",
+    "imageAlt": "Aguas turquesas de Sa Coma, Mallorca"
+  },
+  {
+    "slug": "porto-cristo",
+    "name": "Porto Cristo",
+    "title": "Alquiler de Jet Ski en Porto Cristo, Mallorca | JetExperience Baleares",
+    "description": "Ruta en jet ski hasta Porto Cristo desde Costa de los Pinos. ~12 km de costa virgen, calas escondidas y acantilados. La experiencia más aventurera. Reserva por WhatsApp.",
+    "h1": "Alquiler de Jet Ski en Porto Cristo, Mallorca",
+    "intro1": "Porto Cristo es uno de los puertos naturales más espectaculares de Mallorca, conocido mundialmente por las Coves del Drach. Navegar en jet ski hasta Porto Cristo es la ruta más aventurera de nuestro catálogo: aproximadamente 12 km de costa virgen con calas escondidas y acantilados imponentes.",
+    "intro2": "Esta ruta está disponible con el Pack Especial de 2 horas y es perfecta para quienes ya tienen experiencia y quieren explorar el litoral este de Mallorca a fondo. Consulta disponibilidad por WhatsApp.",
+    "highlight": "La ruta más larga y espectacular: ~12 km de costa virgen hasta el puerto natural de Porto Cristo.",
+    "features": [
+      "Ruta de ~12 km con calas vírgenes y acantilados",
+      "Puerto natural espectacular al final del trayecto",
+      "Recomendada con el Pack Especial 2 horas"
+    ],
+    "faq": [
+      {
+        "q": "¿Podemos llegar a Porto Cristo en jet ski?",
+        "a": "Sí, es nuestra ruta más larga. Disponible con el Pack Especial de 2 horas. Se recomienda experiencia previa y buen estado del mar. Consulta disponibilidad."
+      },
+      {
+        "q": "¿Cuánto tiempo dura la ruta hasta Porto Cristo?",
+        "a": "Aproximadamente 2 horas ida y vuelta navegando a ritmo cómodo, con paradas para disfrutar del paisaje. Por eso la recomendamos con el pack de 2 horas."
+      }
+    ],
+    "geo": { "lat": 39.5322, "lng": 3.3381 },
+    "image": "galeria-04.jpg",
+    "imageAlt": "Ruta costera en moto de agua hacia Porto Cristo, Mallorca"
+  },
+  {
+    "slug": "costa-de-los-pinos",
+    "name": "Costa de los Pinos",
+    "title": "Alquiler de Jet Ski en Costa de los Pinos, Mallorca | JetExperience Baleares",
+    "description": "Nuestra base de jet ski está en Costa de los Pinos, Mallorca. Salida directa al mar desde Avenida del Pinar 43. Sea-Doo modernos, chaleco incluido. Reserva por WhatsApp.",
+    "h1": "Alquiler de Jet Ski en Costa de los Pinos, Mallorca",
+    "intro1": "Costa de los Pinos es el punto de salida de todas nuestras experiencias y nuestra base principal. Esta exclusiva zona residencial entre Sa Coma y Cala Millor ofrece acceso directo al mar en aguas privilegiadas, con poca afluencia de bañistas y un entorno natural extraordinario.",
+    "intro2": "Si te alojas en Costa de los Pinos o sus alrededores, el servicio sale directamente desde aquí. Avenida del Pinar 43 es el punto de partida hacia Cala Millor, Cala Bona, Sa Coma y Porto Cristo.",
+    "highlight": "Base principal del servicio. Salida directa al mar desde Avenida del Pinar 43.",
+    "features": [
+      "Base principal — salida directa sin desplazamiento",
+      "Aguas tranquilas y exclusivas, poca afluencia",
+      "Punto de partida ideal para todas las rutas"
+    ],
+    "faq": [
+      {
+        "q": "¿Dónde está exactamente vuestra base en Costa de los Pinos?",
+        "a": "En Avenida del Pinar 43, Costa de los Pinos, 07560. Puedes encontrarnos en Google Maps buscando JetExperience Baleares."
+      },
+      {
+        "q": "¿Hacéis entrega en Costa de los Pinos?",
+        "a": "Sí, de hecho es nuestro punto habitual de entrega. Confirma lugar exacto al reservar por WhatsApp."
+      }
+    ],
+    "geo": { "lat": 39.6377, "lng": 3.4145 },
+    "image": "galeria-11-new.jpg",
+    "imageAlt": "Vista aérea de moto de agua en Costa de los Pinos, Mallorca"
+  }
+]
