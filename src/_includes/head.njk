@@ -37,6 +37,11 @@
   <meta name="twitter:description" content="Vive una experiencia única en el mar. Con licencia náutica. Sea-Doo modernos, chaleco incluido.">
   <meta name="twitter:image" content="https://jetexperiencemallorca.com/assets/img/galeria-08-new.jpg">
 
+  <!-- Preconnect CDN & Fonts -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <!-- Bootstrap Icons (non-render-blocking) -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></noscript>
@@ -46,17 +51,16 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts (non-render-blocking) -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"></noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 
-  <!-- Preload hero image (LCP) -->
-  <link rel="preload" as="image" href="/assets/img/hero-1.jpg">
+  <!-- Preload hero image LCP (fetchpriority=high) -->
+  <link rel="preload" as="image" href="/assets/img/hero-1.jpg" fetchpriority="high">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/css/styles.css?v=202605131109">
