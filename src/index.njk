@@ -1,0 +1,508 @@
+---
+layout: base.njk
+---
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero-section">
+
+      <!-- Slideshow -->
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide hero-slide--1 hero-slide--active"></div>
+        <div class="hero-slide hero-slide--2"></div>
+        <div class="hero-slide hero-slide--3"></div>
+      </div>
+      <div class="hero-overlay"></div>
+
+      <!-- Flechas de navegación -->
+      <button class="hero-arrow hero-arrow--prev" aria-label="Anterior">&#8249;</button>
+      <button class="hero-arrow hero-arrow--next" aria-label="Siguiente">&#8250;</button>
+
+      <!-- Contenido -->
+      <div class="container h-100 d-flex align-items-center">
+        <div class="hero-content text-center text-lg-start">
+          <span class="section-label" data-i18n="hero.label">Cala Millor · Mallorca</span>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title.prefix">Alquiler de Jet Ski en</span>
+            <span class="hero-title__location" data-i18n="hero.title.location">Costa de los Pinos · Cala Millor</span>
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">Vive una experiencia única en el mar con nuestras motos de agua</p>
+
+          <div class="hero-ctas d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+            <a href="#contacto" class="btn-cta" data-i18n="hero.cta.whatsapp">Reservar por WhatsApp</a>
+            <a href="#experiencias" class="btn-outline-light-brand" data-i18n="hero.cta.prices">Ver precios</a>
+          </div>
+
+          <div class="hero-badges d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+            <span class="hero-badge" data-i18n="hero.badge.license">Con licencia</span>
+            <span class="hero-badge hero-badge--accent" data-i18n="hero.badge.booking">Reserva rápida</span>
+            <span class="hero-badge" data-i18n="hero.badge.safety">Experiencia segura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURE: SERVICIO ===== -->
+    <section id="servicio" class="feature-section py-section bg-light-brand">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- Texto izquierda -->
+          <div class="col-lg-6">
+            <span class="section-label" data-i18n="feature.label">Nuestro servicio</span>
+            <h2 class="section-title mb-4" data-i18n="feature.title">Alquiler de motos de agua en Mallorca</h2>
+            <p class="feature-desc" data-i18n="feature.desc">Disfruta de la libertad del Mar Mediterráneo; sé el protagonista de tu propio viaje.</p>
+            <p class="feature-desc" data-i18n="feature.desc2">Si cuentas con licencia de navegación o titulación superior, podrás explorar las aguas cristalinas de Mallorca a tu ritmo.</p>
+            <a href="#experiencias" class="btn-cta mt-3" data-i18n="feature.cta">Empezar la aventura</a>
+          </div>
+
+          <!-- Grid de fotos derecha -->
+          <div class="col-lg-6">
+            <div class="feature-grid">
+              <img src="assets/img/servicio-01.avif"
+                alt="Moto acuática Sea-Doo en Mallorca" loading="lazy" class="feature-grid__img">
+              <img src="assets/img/servicio-02-new.jpg"
+                alt="Moto acuática navegando en el Mediterráneo" loading="lazy" class="feature-grid__img">
+              <img src="assets/img/servicio-03.avif"
+                alt="Sea-Doo en el Mediterráneo Mallorca" loading="lazy" class="feature-grid__img">
+              <img src="assets/img/servicio-04.avif"
+                alt="Experiencia moto acuática Mallorca" loading="lazy" class="feature-grid__img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCIAS / TARIFAS ===== -->
+    <section id="experiencias" class="py-section bg-dark-brand">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label" data-i18n="experiences.label">Nuestros precios</span>
+          <h2 class="section-title section-title--light" data-i18n="experiences.title">Elige tu experiencia</h2>
+        </div>
+
+        <div class="exp-grid">
+
+          <!-- Card 1: Popular -->
+          <div class="exp-card">
+            <img src="assets/img/galeria-12-new.jpg"
+              alt="Moto acuática a alta velocidad Costa de los Pinos Mallorca" loading="lazy" class="exp-card__img">
+            <div class="exp-card__overlay"></div>
+            <span class="exp-card__badge exp-card__badge--popular" data-i18n="exp.classic.badge">⭐ POPULAR</span>
+            <div class="exp-card__body">
+              <p class="exp-card__desc">
+                <span data-i18n="exp.classic.desc">La más popular · Parejas y amigos</span>
+                <span role="button" tabindex="0" class="exp-info-btn" data-i18n-tooltip="exp.classic.tooltip" aria-label="Más información"><i class="bi bi-info-circle"></i></span>
+              </p>
+              <div class="exp-card__footer">
+                <div>
+                  <span class="exp-card__price" data-i18n="exp.classic.price">1h · 130€</span>
+                </div>
+                <a href="#" class="exp-card__btn" data-whatsapp data-exp-key="classic" data-i18n="exp.book">Reservar →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Privada -->
+          <div class="exp-card">
+            <img src="assets/img/galeria-01-new.jpg"
+              alt="Grupo en moto acuática con chalecos Costa de los Pinos Mallorca" loading="lazy" class="exp-card__img">
+            <div class="exp-card__overlay"></div>
+            <span class="exp-card__badge" data-i18n="exp.private.duration">⭐ PACK ESPECIAL</span>
+            <div class="exp-card__body">
+              <p class="exp-card__desc">
+                <span data-i18n="exp.private.desc">Para grupos y ocasiones especiales</span>
+                <span role="button" tabindex="0" class="exp-info-btn" data-i18n-tooltip="exp.private.tooltip" aria-label="Más información"><i class="bi bi-info-circle"></i></span>
+              </p>
+              <div class="exp-card__footer">
+                <div>
+                  <span class="exp-card__price" data-i18n="exp.private.price">2h · 200€</span>
+                </div>
+                <a href="#" class="exp-card__btn" data-whatsapp data-exp-key="private" data-i18n="exp.book">Reservar →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Oferta Especial -->
+          <div class="exp-card--offer">
+            <div class="exp-card--offer__img-wrap">
+              <img src="assets/img/oferta-especial.jpg"
+                alt="Oferta especial 260€ curso licencia náutica + 2h moto de agua Mallorca" loading="lazy"
+                class="exp-card--offer__img">
+            </div>
+            <div class="exp-card--offer__overlay"></div>
+            <span class="exp-card--offer__badge" data-i18n="exp.oferta.badge">🔥 OFERTA</span>
+            <div class="exp-card--offer__strip">
+              <p class="exp-card--offer__title" data-i18n="exp.oferta.title">Oferta Especial</p>
+              <a href="#" class="btn-whatsapp" data-whatsapp data-exp-key="oferta" data-i18n="exp.oferta.cta">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Consultar →
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <p class="text-center mt-4" style="color:rgba(255,255,255,0.5); font-size:0.8rem;" data-i18n="exp.note">
+          Precios orientativos. Consulta disponibilidad y condiciones.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CARACTERÍSTICAS ===== -->
+    <section id="caracteristicas" class="py-section bg-white">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-6">
+            <div class="text-center mb-4">
+              <span class="section-label" data-i18n="features.label">Incluido</span>
+              <h2 class="section-title" data-i18n="features.title">¿Qué incluye el servicio?</h2>
+            </div>
+            <ul class="checklist">
+              <li class="checklist__item checklist__item--yes" data-i18n="feat.delivery">Entrega y recogida en el lugar acordado</li>
+              <li class="checklist__item checklist__item--yes" data-i18n="feat.lifejacket">Chaleco salvavidas para los ocupantes adultos y niños</li>
+              <li class="checklist__item checklist__item--yes" data-i18n="feat.snorkel">Kit de snorkel</li>
+              <li class="checklist__item checklist__item--yes" data-i18n="feat.anchor">Ancla plegable</li>
+              <li class="checklist__item checklist__item--no" data-i18n="feat.fuel">Gasolina</li>
+              <li class="checklist__item checklist__item--no" data-i18n="feat.deposit">Fianza en el momento de la entrega</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 border-start">
+            <div class="text-center mb-4">
+              <span class="section-label" data-i18n="safety.label">Seguridad</span>
+              <h2 class="section-title" data-i18n="safety.title">Tu seguridad, primero</h2>
+            </div>
+            <div class="safety-item"><span>🦺</span><span data-i18n="safety.1">Chaleco salvavidas incluido</span></div>
+            <div class="safety-item"><span>📋</span><span data-i18n="safety.2">Briefing inicial obligatorio</span></div>
+            <div class="safety-item"><span>📖</span><span data-i18n="safety.4">Normas básicas explicadas antes de salir</span></div>
+            <div class="safety-item"><span>✅</span><span data-i18n="safety.5">Apto para principiantes</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FLOTA ===== -->
+    <section id="flota" class="py-section bg-light-brand">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="section-label" data-i18n="fleet.label">Nuestra flota</span>
+            <h2 class="section-title mb-4" data-i18n="fleet.title">Alquiler de Jet Ski en Costa de los Pinos, Cala Millor</h2>
+            <p class="feature-desc mb-5" data-i18n="fleet.desc">Alquila una moto de agua directamente en Costa de los Pinos, una de las zonas más privilegiadas de la costa levantina de Mallorca. Navega por aguas cristalinas frente a Cala Bona, Sa Coma y Porto Cristo a bordo de nuestras Sea-Doo, las motos más modernas del mercado. Revisadas diariamente y listas para que disfrutes al máximo.</p>
+            <div class="fleet-specs">
+              <div class="fleet-spec">
+                <span class="fleet-spec__icon">🏄</span>
+                <div>
+                  <strong data-i18n="fleet.spec1.title">Casco ST3 Hull™</strong>
+                  <small data-i18n="fleet.spec1.sub">Fibra de vidrio</small>
+                </div>
+              </div>
+              <div class="fleet-spec">
+                <span class="fleet-spec__icon">⚙️</span>
+                <div>
+                  <strong data-i18n="fleet.spec2.title">Sistema iTC™</strong>
+                  <small data-i18n="fleet.spec2.sub">Motor potente</small>
+                </div>
+              </div>
+              <div class="fleet-spec">
+                <span class="fleet-spec__icon">💧</span>
+                <div>
+                  <strong data-i18n="fleet.spec3.title">Modo ECO® (70L)</strong>
+                  <small data-i18n="fleet.spec3.sub">Consumo eficiente</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="fleet-photos">
+              <img src="assets/img/jetski_seadoo.webp"
+                alt="Sea-Doo jet ski vista lateral, Cala Millor" loading="lazy"
+                class="fleet-photo fleet-photo--top rounded-4 shadow-lg">
+              <img src="assets/img/fleet-01.avif"
+                alt="Sea-Doo jet ski vista frontal, Mallorca" loading="lazy"
+                class="fleet-photo fleet-photo--bottom rounded-4 shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESO ===== -->
+    <section id="proceso" class="py-section bg-ocean">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label" style="color:rgba(255,255,255,0.7)" data-i18n="steps.label">¿Cómo funciona?</span>
+          <h2 class="section-title section-title--light" data-i18n="steps.title">Reserva en 5 pasos</h2>
+        </div>
+        <div class="steps-list mx-auto" style="max-width:560px">
+          <div class="step-item"><span class="step-num">1</span><span data-i18n="step.1">Elige tu experiencia</span></div>
+          <div class="step-item"><span class="step-num">2</span><span data-i18n="step.2">Contacta por WhatsApp</span></div>
+          <div class="step-item"><span class="step-num">3</span><span data-i18n="step.3">Confirma día y hora</span></div>
+          <div class="step-item"><span class="step-num">4</span><span data-i18n="step.4">¡Disfruta tu ruta en jet ski!</span></div>
+          <div class="step-item">
+            <span class="step-num">📞</span>
+            <span><span data-i18n="step.5.prefix">Si prefieres llamar,</span> <a data-phone href="#" class="step-call-link" data-i18n="step.5.link">aquí</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="py-section bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-5 mb-lg-0">
+            <span class="section-label" data-i18n="faq.label">Preguntas frecuentes</span>
+            <h2 class="section-title" data-i18n="faq.title">¿Tienes dudas?</h2>
+          </div>
+          <div class="col-lg-7">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                    <span data-i18n="faq.1.q">¿Necesito licencia náutica?</span>
+                  </button>
+                </h3>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.1.a">Sí. El conductor debe tener licencia de navegación o titulación superior.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                    <span data-i18n="faq.2.q">¿Pueden ir dos personas en una moto?</span>
+                  </button>
+                </h3>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.2.a">Sí, nuestras motos admiten 3 personas por unidad.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                    <span data-i18n="faq.3.q">¿Qué debo llevar?</span>
+                  </button>
+                </h3>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.3.a">Bañador, crema solar y ganas de disfrutar. Nosotros ponemos el resto: chaleco, briefing y moto.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                    <span data-i18n="faq.4.q">¿Desde qué edad se puede participar?</span>
+                  </button>
+                </h3>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.4.a">Los menores de 18 años deben ir acompañados de un adulto.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                    <span data-i18n="faq.5.q">¿Qué pasa si hace mal tiempo?</span>
+                  </button>
+                </h3>
+                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.5.a">En caso de condiciones meteorológicas adversas, reprogramamos sin coste o te devolvemos el importe íntegro.</div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button faq-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                    <span data-i18n="faq.6.q">¿Cómo puedo reservar?</span>
+                  </button>
+                </h3>
+                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body faq-body" data-i18n="faq.6.a">La forma más rápida es por WhatsApp. También puedes llamarnos o enviarnos un formulario y te respondemos en menos de 2 horas.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALERÍA ===== -->
+    <section id="galeria" class="py-section bg-light-brand">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label" data-i18n="gallery.label">Galería</span>
+          <h2 class="section-title" data-i18n="gallery.title">Momentos únicos</h2>
+        </div>
+        <div class="gallery-slider">
+          <button class="hero-arrow gallery-arrow--prev" aria-label="Anterior">&#8249;</button>
+          <button class="hero-arrow gallery-arrow--next" aria-label="Siguiente">&#8250;</button>
+
+          <div class="gallery-grid" id="gallery-grid">
+
+            <a href="#gimg1" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-01-new.jpg"
+                alt="Dos personas en moto acuática con chalecos al atardecer" loading="lazy">
+            </a>
+            <a href="#gimg2" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-02.jpeg"
+                alt="Ruta al atardecer en moto acuática Mallorca" loading="lazy">
+            </a>
+            <a href="#gimg3" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-03.jpg"
+                alt="Playa de Cala Millor vista desde el mar" loading="lazy">
+            </a>
+            <a href="#gimg4" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-04.jpg"
+                alt="Ruta costera Porto Cristo moto acuática" loading="lazy">
+            </a>
+            <a href="#gimg5" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-05.jpg"
+                alt="Aguas cristalinas Sa Coma Mallorca" loading="lazy">
+            </a>
+            <a href="#gimg6" class="gallery-item" data-page="1">
+              <img src="assets/img/galeria-06.jpg"
+                alt="Excursión en moto acuática aguas turquesas Mallorca" loading="lazy">
+            </a>
+
+            <a href="#gimg7" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-07-new.jpg"
+                alt="Moto acuática en acción con salpicadura de agua" loading="lazy">
+            </a>
+            <a href="#gimg8" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-08-new.jpg"
+                alt="Jet ski a alta velocidad en el agua" loading="lazy">
+            </a>
+            <a href="#gimg9" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-09.jpg"
+                alt="Moto acuática en acción mar Mallorca" loading="lazy">
+            </a>
+            <a href="#gimg10" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-10.jpg"
+                alt="Conductor en moto acuática Sea-Doo Mallorca" loading="lazy">
+            </a>
+            <a href="#gimg11" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-11-new.jpg"
+                alt="Vista aérea de moto acuática haciendo círculos en agua turquesa" loading="lazy">
+            </a>
+            <a href="#gimg12" class="gallery-item" data-page="2">
+              <img src="assets/img/galeria-12-new.jpg"
+                alt="Moto acuática amarilla a alta velocidad con arcoíris" loading="lazy">
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox CSS :target -->
+      <div id="gimg1" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-01-new.jpg" alt="Dos personas en moto acuática con chalecos al atardecer" loading="lazy"></div>
+      <div id="gimg2" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-02.jpeg" alt="Ruta al atardecer en moto acuática Mallorca" loading="lazy"></div>
+      <div id="gimg3" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-03.jpg" alt="Playa de Cala Millor vista desde el mar" loading="lazy"></div>
+      <div id="gimg4" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-04.jpg" alt="Ruta costera Porto Cristo moto acuática" loading="lazy"></div>
+      <div id="gimg5" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-05.jpg" alt="Aguas cristalinas Sa Coma Mallorca" loading="lazy"></div>
+      <div id="gimg6" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-06.jpg" alt="Excursión en moto acuática aguas turquesas Mallorca" loading="lazy"></div>
+      <div id="gimg7" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-07-new.jpg" alt="Moto acuática en acción con salpicadura de agua" loading="lazy"></div>
+      <div id="gimg8" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-08-new.jpg" alt="Jet ski a alta velocidad en el agua" loading="lazy"></div>
+      <div id="gimg9" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-09.jpg" alt="Moto acuática en acción mar Mallorca" loading="lazy"></div>
+      <div id="gimg10" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-10.jpg" alt="Conductor en moto acuática Sea-Doo Mallorca" loading="lazy"></div>
+      <div id="gimg11" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-11-new.jpg" alt="Vista aérea de moto acuática haciendo círculos en agua turquesa" loading="lazy"></div>
+      <div id="gimg12" class="lightbox"><a href="#galeria" class="lightbox__close">✕</a>
+        <img src="assets/img/galeria-12-new.jpg" alt="Moto acuática amarilla a alta velocidad con arcoíris" loading="lazy"></div>
+    </section>
+
+    <!-- ===== CONTACTO + GOOGLE MAPS ===== -->
+    <section id="contacto" class="py-section bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="section-label" data-i18n="contact.label">Contacto</span>
+          <h2 class="section-title" data-i18n="contact.title">¿Dónde estamos?</h2>
+        </div>
+
+        <div class="row g-5">
+
+          <!-- Mapa -->
+          <div class="col-lg-7">
+            <div class="map-wrapper">
+              <iframe
+                data-maps-embed
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196635.93878450102!2d2.8838303093940323!3d39.63988895584924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12963f4c3087a2ff%3A0x6cea15f041fc2041!2sJetExperience%20Baleares!5e0!3m2!1ses!2ses!4v1778668418112!5m2!1ses!2ses"
+                width="100%"
+                height="400"
+                style="border:0; border-radius:16px;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="JetExperience Baleares location Cala Millor">
+              </iframe>
+            </div>
+            <div class="contact-info mt-4">
+              <div class="contact-info__item">
+                <span>📍</span>
+                <span data-i18n="contact.address">Avenida del Pinar 43, Costa de los Pinos, Cala Millor</span>
+              </div>
+              <div class="contact-info__item">
+                <span>✉️</span>
+                <span data-email class="contact-link">info@jetexperiencemallorca.com</span>
+              </div>
+              <a data-maps-url href="https://share.google/Q987VDnOacnBXAkCH" class="btn-cta mt-3 d-inline-block" data-i18n="contact.howto">Cómo llegar</a>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div class="col-lg-5">
+            <h3 class="section-title mb-4" style="font-size:1.4rem" data-i18n="contact.form.title">¿Hablamos?</h3>
+            <form class="contact-form" id="contact-form" novalidate>
+              <!-- Honeypot -->
+              <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+              <!-- Phone hidden: contact always via WhatsApp -->
+              <input type="hidden" name="phone" id="contact-phone" value="WhatsApp">
+
+              <div class="mb-3">
+                <label for="contact-name" class="form-label fw-semibold" data-i18n="contact.form.name">Nombre</label>
+                <input id="contact-name" type="text" name="name" class="form-control contact-input" required
+                  data-i18n-placeholder="contact.form.name" placeholder="Nombre">
+                <div class="invalid-feedback" data-i18n="contact.form.error.name">Por favor, indica tu nombre.</div>
+              </div>
+              <div class="mb-3">
+                <label for="contact-date" class="form-label fw-semibold" data-i18n="contact.form.date">Fecha deseada</label>
+                <input id="contact-date" type="date" name="date" class="form-control contact-input">
+                <div class="invalid-feedback" data-i18n="contact.form.error.date">La fecha no puede ser anterior a hoy.</div>
+              </div>
+              <div class="mb-3">
+                <label for="contact-experience" class="form-label fw-semibold" data-i18n="contact.form.experience">Tipo de experiencia</label>
+                <select id="contact-experience" name="experience" class="form-select contact-input">
+                  <option value="" data-i18n="contact.form.experience">Tipo de experiencia</option>
+                  <option value="classic" data-i18n="contact.form.exp.classic">Popular – 1h · 130€</option>
+                  <option value="private" data-i18n="contact.form.exp.private">Pack Especial – 2h · 200€</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="contact-message" class="form-label fw-semibold" data-i18n="contact.form.message">Mensaje</label>
+                <textarea id="contact-message" name="message" rows="4" class="form-control contact-input"
+                  data-i18n-placeholder="contact.form.message" placeholder="Mensaje"></textarea>
+              </div>
+              <button type="submit" class="btn-cta w-100" data-i18n="contact.form.submit">Enviar por WhatsApp</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
