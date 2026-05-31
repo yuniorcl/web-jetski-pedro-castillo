@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('es') }}">
+<head>
+  {% include "head.njk" %}
+</head>
+<body>
+  {% include "header.njk" %}
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+</body>
+</html>
