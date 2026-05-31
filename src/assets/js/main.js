@@ -15,7 +15,7 @@ async function initI18n() {
 }
 
 async function applyLang(lang) {
-  const res = await fetch(`assets/i18n/${lang}.json?v=202605131109`);
+  const res = await fetch(`/assets/i18n/${lang}.json?v=202605131109`);
   translations = await res.json();
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach(el => {
