@@ -27,9 +27,9 @@
               <!-- Language switcher -->
               <li class="nav-item ms-lg-2">
                 <div class="lang-switcher">
-                  <button data-lang-btn="es" class="lang-btn active">ES</button>
+                  <a href="{{ langEs }}" class="lang-btn{% if currentLang == 'es' %} active{% endif %}">ES</a>
                   <span class="lang-sep">|</span>
-                  <button data-lang-btn="en" class="lang-btn">EN</button>
+                  <a href="{{ langEn }}" class="lang-btn{% if currentLang == 'en' %} active{% endif %}">EN</a>
                 </div>
               </li>
             </ul>
