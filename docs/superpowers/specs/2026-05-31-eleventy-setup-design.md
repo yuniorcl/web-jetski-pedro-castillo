@@ -5,6 +5,30 @@
 
 ---
 
+## ⚠️ Pendiente antes del merge a main
+
+El workflow `.github/workflows/deploy.yml` fue modificado temporalmente para desplegar en push a `feature/arquitectura-multipagina` (para validar en producción). **Antes de hacer merge a main hay que revertirlo** al trigger original:
+
+```yaml
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true
+```
+
+Commit a hacer antes del merge:
+```bash
+git commit -m "ci: revert workflow to deploy on PR merge to main"
+```
+
+---
+
 ## Objetivo
 
 Migrar el sitio web estático actual (un único `index.html`) a una arquitectura Eleventy con plantillas Nunjucks, sin ningún cambio visual ni funcional para el usuario final. El resultado es idéntico al sitio actual pero generado por Eleventy, listo para añadir nuevas páginas en fases posteriores.
