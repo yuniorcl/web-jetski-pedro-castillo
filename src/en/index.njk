@@ -139,6 +139,7 @@ currentLang: en
             <div class="exp-card--offer__img-wrap">
               <img src="/assets/img/oferta-especial.jpg"
                 alt="Special offer 260€ nautical licence course + 2h jet ski Mallorca" loading="lazy"
+                width="1024" height="1355"
                 class="exp-card--offer__img">
             </div>
             <div class="exp-card--offer__overlay"></div>
@@ -270,12 +271,27 @@ currentLang: en
           </div>
           <div class="col-lg-7">
             <div class="fleet-photos">
-              <img src="/assets/img/jetski_seadoo.webp"
-                alt="Sea-Doo jet ski side view, Cala Millor" loading="lazy"
-                class="fleet-photo fleet-photo--top rounded-4 shadow-lg">
-              <img src="/assets/img/fleet-01.avif"
-                alt="Sea-Doo jet ski front view, Mallorca" loading="lazy"
-                class="fleet-photo fleet-photo--bottom rounded-4 shadow-lg">
+              <picture>
+                <source
+                  srcset="/assets/img/jetski_seadoo-480.jpg 480w,
+                          /assets/img/jetski_seadoo-800.jpg 800w"
+                  sizes="(max-width: 576px) 480px, (max-width: 992px) 800px, 1280px"
+                  type="image/jpeg">
+                <img src="/assets/img/jetski_seadoo.webp"
+                  alt="Sea-Doo jet ski side view, Cala Millor" loading="lazy"
+                  width="1280" height="960"
+                  class="fleet-photo fleet-photo--top rounded-4 shadow-lg">
+              </picture>
+              <picture>
+                <source
+                  srcset="/assets/img/fleet-01-400.jpg 400w"
+                  sizes="(max-width: 576px) 400px, 661px"
+                  type="image/jpeg">
+                <img src="/assets/img/fleet-01.avif"
+                  alt="Sea-Doo jet ski front view, Mallorca" loading="lazy"
+                  width="661" height="480"
+                  class="fleet-photo fleet-photo--bottom rounded-4 shadow-lg">
+              </picture>
             </div>
           </div>
         </div>

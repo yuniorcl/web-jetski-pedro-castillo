@@ -136,8 +136,9 @@ currentLang: es
           <!-- Card 3: Oferta Especial -->
           <div class="exp-card--offer">
             <div class="exp-card--offer__img-wrap">
-              <img src="assets/img/oferta-especial.jpg"
+              <img src="/assets/img/oferta-especial.jpg"
                 alt="Oferta especial 260€ curso licencia náutica + 2h moto de agua Mallorca" loading="lazy"
+                width="1024" height="1355"
                 class="exp-card--offer__img">
             </div>
             <div class="exp-card--offer__overlay"></div>
@@ -269,12 +270,27 @@ currentLang: es
           </div>
           <div class="col-lg-7">
             <div class="fleet-photos">
-              <img src="assets/img/jetski_seadoo.webp"
-                alt="Sea-Doo jet ski vista lateral, Cala Millor" loading="lazy"
-                class="fleet-photo fleet-photo--top rounded-4 shadow-lg">
-              <img src="assets/img/fleet-01.avif"
-                alt="Sea-Doo jet ski vista frontal, Mallorca" loading="lazy"
-                class="fleet-photo fleet-photo--bottom rounded-4 shadow-lg">
+              <picture>
+                <source
+                  srcset="/assets/img/jetski_seadoo-480.jpg 480w,
+                          /assets/img/jetski_seadoo-800.jpg 800w"
+                  sizes="(max-width: 576px) 480px, (max-width: 992px) 800px, 1280px"
+                  type="image/jpeg">
+                <img src="/assets/img/jetski_seadoo.webp"
+                  alt="Sea-Doo jet ski vista lateral, Cala Millor" loading="lazy"
+                  width="1280" height="960"
+                  class="fleet-photo fleet-photo--top rounded-4 shadow-lg">
+              </picture>
+              <picture>
+                <source
+                  srcset="/assets/img/fleet-01-400.jpg 400w"
+                  sizes="(max-width: 576px) 400px, 661px"
+                  type="image/jpeg">
+                <img src="/assets/img/fleet-01.avif"
+                  alt="Sea-Doo jet ski vista frontal, Mallorca" loading="lazy"
+                  width="661" height="480"
+                  class="fleet-photo fleet-photo--bottom rounded-4 shadow-lg">
+              </picture>
             </div>
           </div>
         </div>
