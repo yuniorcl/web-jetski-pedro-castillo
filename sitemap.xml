@@ -4,12 +4,20 @@
 
   <url>
     <loc>https://jetexperiencemallorca.com/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://jetexperiencemallorca.com/assets/img/hero-1.jpg</image:loc>
       <image:title>Alquiler de Jet Ski en Cala Millor, Mallorca</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jetexperiencemallorca.com/assets/img/hero-2.jpg</image:loc>
+      <image:title>Jet ski en la playa de Cala Millor, Mallorca</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://jetexperiencemallorca.com/assets/img/hero-3.jpg</image:loc>
+      <image:title>Moto de agua Sea-Doo, JetExperience Baleares</image:title>
     </image:image>
     <image:image>
       <image:loc>https://jetexperiencemallorca.com/assets/img/jetski_seadoo.webp</image:loc>
