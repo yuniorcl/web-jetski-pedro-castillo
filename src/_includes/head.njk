@@ -15,10 +15,10 @@
 
   <title>{{ pageTitle or "Alquiler de Jet Ski en Cala Millor, Mallorca | JetExperience Baleares" }}</title>
   <meta name="description" content="{{ pageDescription or 'Alquila una moto de agua en Cala Millor, Mallorca. Con licencia náutica. Sea-Doo modernos, chaleco incluido. Rutas de 1h (130€) y 2h (200€). Reserva fácil por WhatsApp.' }}">
-  <link rel="canonical" href="{{ pageCanonical or 'https://jetexperiencemallorca.com/' }}">
-  <link rel="alternate" hreflang="es" href="{{ langEs }}">
-  <link rel="alternate" hreflang="en" href="{{ langEn }}">
-  <link rel="alternate" hreflang="x-default" href="{{ langEs }}">
+  <link rel="canonical" href="{{ site.url }}{{ pageCanonical or '/' }}">
+  <link rel="alternate" hreflang="es" href="{{ site.url }}{{ langEs }}">
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ langEn }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ langEs }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
