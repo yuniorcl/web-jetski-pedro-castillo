@@ -21,13 +21,6 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
-          registry-url: 'https://registry.npmjs.org'
-
-      - name: Configure npm registry
-        run: |
-          echo "registry=https://registry.npmjs.org/" > ~/.npmrc
-          npm config delete proxy --global || true
-          npm config delete https-proxy --global || true
 
       - name: Install & Build
         run: npm ci && npm run build
