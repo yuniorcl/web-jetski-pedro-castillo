@@ -87,12 +87,13 @@
         </div>
 
         <!-- Links rápidos -->
+        {% set fp = '/en/' if currentLang == 'en' else '/' %}
         <div class="footer-col">
-          <h3 class="footer-col__title" data-i18n="footer.links">Enlaces rápidos</h3>
-          <a href="/#hero" data-i18n="nav.home">Inicio</a>
-          <a href="/#experiencias" data-i18n="nav.prices">Tarifas</a>
-          <a href="/#galeria" data-i18n="nav.gallery">Galería</a>
-          <a href="/#contacto" data-i18n="nav.contact">Contacto</a>
+          <h3 class="footer-col__title">{% if currentLang == 'en' %}Quick links{% else %}Enlaces rápidos{% endif %}</h3>
+          <a href="{{ fp }}#hero">{% if currentLang == 'en' %}Home{% else %}Inicio{% endif %}</a>
+          <a href="{{ fp }}#experiencias">{% if currentLang == 'en' %}Prices{% else %}Tarifas{% endif %}</a>
+          <a href="{{ fp }}#galeria">{% if currentLang == 'en' %}Gallery{% else %}Galería{% endif %}</a>
+          <a href="{{ fp }}#contacto">{% if currentLang == 'en' %}Contact{% else %}Contacto{% endif %}</a>
           {% if currentLang == 'en' %}
           <a href="/en/about-us/">About Us</a>
           {% else %}
@@ -111,22 +112,23 @@
         </div>
 
         <!-- Zonas de servicio -->
+        {% set lp = '/en/jet-ski-' if currentLang == 'en' else '/jet-ski-' %}
         <div class="footer-col">
-          <h3 class="footer-col__title">Zonas de servicio</h3>
-          <a href="/jet-ski-cala-millor/">Cala Millor</a>
-          <a href="/jet-ski-cala-bona/">Cala Bona</a>
-          <a href="/jet-ski-sa-coma/">Sa Coma</a>
-          <a href="/jet-ski-porto-cristo/">Porto Cristo</a>
-          <a href="/jet-ski-costa-de-los-pinos/">Costa de los Pinos</a>
+          <h3 class="footer-col__title">{% if currentLang == 'en' %}Service areas{% else %}Zonas de servicio{% endif %}</h3>
+          <a href="{{ lp }}cala-millor/">Cala Millor</a>
+          <a href="{{ lp }}cala-bona/">Cala Bona</a>
+          <a href="{{ lp }}sa-coma/">Sa Coma</a>
+          <a href="{{ lp }}porto-cristo/">Porto Cristo</a>
+          <a href="{{ lp }}costa-de-los-pinos/">Costa de los Pinos</a>
         </div>
 
       </div>
 
       <div class="footer-bottom">
-        <span data-i18n="footer.copyright">© 2026 JetExperience Baleares. Todos los derechos reservados.</span>
+        <span>{% if currentLang == 'en' %}© 2026 JetExperience Baleares. All rights reserved.{% else %}© 2026 JetExperience Baleares. Todos los derechos reservados.{% endif %}</span>
         <div class="footer-legal-links">
-          <a href="/legal/aviso-legal/" data-i18n="footer.legal">Aviso legal</a>
-          <a href="/legal/politica-privacidad/" data-i18n="footer.privacy">Política de privacidad</a>
+          <a href="/legal/aviso-legal/">{% if currentLang == 'en' %}Legal notice{% else %}Aviso legal{% endif %}</a>
+          <a href="/legal/politica-privacidad/">{% if currentLang == 'en' %}Privacy policy{% else %}Política de privacidad{% endif %}</a>
           <a href="https://www.instagram.com/jetexperiencebaleares" target="_blank" rel="noopener" class="social-link">
             <i class="bi bi-instagram"></i> Instagram
           </a>

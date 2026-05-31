@@ -4,9 +4,10 @@ let currentLang = 'es';
 let translations = {};
 
 async function initI18n() {
+  const isEnPage = window.location.pathname.startsWith('/en/');
   const saved = localStorage.getItem('mjLang');
   const browser = navigator.language?.startsWith('en') ? 'en' : 'es';
-  currentLang = saved || browser;
+  currentLang = isEnPage ? 'en' : (saved || browser);
   await applyLang(currentLang);
   document.querySelectorAll('[data-lang-btn]').forEach(btn => {
     btn.addEventListener('click', () => switchLang(btn.dataset.langBtn));
