@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "cala-millor",
+    "name": "Cala Millor",
+    "title": "Jet-Ski-Verleih in Cala Millor, Mallorca | JetExperience Baleares",
+    "description": "Jet-Ski mieten in Cala Millor, Mallorca. Direkte Abfahrt von Costa de los Pinos. Moderne Sea-Doo, Schwimmweste inklusive. Einfache Buchung per WhatsApp.",
+    "h1": "Jet-Ski-Verleih in Cala Millor, Mallorca",
+    "intro1": "Cala Millor ist eines der beliebtesten Touristenziele an der Ostküste Mallorcas mit über 1,5 km Goldstrand. Die ruhigen, seichten Gewässer machen es zum idealen Ort für ein Jet-Ski-Erlebnis, egal ob es Ihr erstes Mal ist oder Sie bereits Erfahrung haben.",
+    "intro2": "Von unserer Basis in Costa de los Pinos liefern wir Ihnen den Sea-Doo direkt an den Strand. Alles, was Sie brauchen, ist ein Sportbootführerschein und Lust auf das Mittelmeer.",
+    "highlight": "Fahren Sie entlang von 1,5 km Goldstrand auf ruhigen, strömungsfreien Gewässern.",
+    "features": [
+      "Ruhige Gewässer, ideal für Anfänger mit Bootsführerschein",
+      "1,5 km Strand mit goldenem Sand und sichtbarem Meeresgrund",
+      "Großes Navigationsgebiet, keine Hindernisse"
+    ],
+    "faq": [
+      {
+        "q": "Wo fährt der Jet-Ski in Cala Millor ab?",
+        "a": "Unsere Basis befindet sich in der Avenida del Pinar 43, Costa de los Pinos, weniger als 1 km vom Strand Cala Millor entfernt. Wir können auch direkt an den Strand liefern, wenn Sie das bevorzugen."
+      },
+      {
+        "q": "Sind die Gewässer von Cala Millor für Anfänger geeignet?",
+        "a": "Ja. Cala Millor hat ruhige, gut geschützte Gewässer, ideal für Erstfahrer. Ein Sportbootführerschein ist immer Pflicht, und ein Sicherheitsbriefing ist inklusive."
+      }
+    ],
+    "geo": { "lat": 39.5878, "lng": 3.3947 },
+    "image": "galeria-03.jpg",
+    "imageAlt": "Strand Cala Millor vom Meer aus gesehen, Mallorca"
+  },
+  {
+    "slug": "cala-bona",
+    "name": "Cala Bona",
+    "title": "Jet-Ski-Verleih in Cala Bona, Mallorca | JetExperience Baleares",
+    "description": "Jet-Ski mieten in Cala Bona, Mallorca. 1 km von unserer Basis in Costa de los Pinos. Moderne Sea-Doo, Schwimmweste inklusive. Per WhatsApp buchen.",
+    "h1": "Jet-Ski-Verleih in Cala Bona, Mallorca",
+    "intro1": "Cala Bona ist ein kleiner, malerischer Fischerhafen, nur 1 km von Cala Millor entfernt. Die blauen Gewässer und die intimere Atmosphäre machen es zu einem der beliebtesten Abfahrtspunkte unserer Kunden. Jet-Ski fahren vor Cala Bona verbindet den Nervenkitzel mit atemberaubenden Ausblicken auf die Serra de Llevant.",
+    "intro2": "Unsere Basis in Costa de los Pinos ist weniger als 5 Minuten auf dem Wasser entfernt, was Cala Bona zu einem der praktischsten Startpunkte für Ihr Erlebnis macht.",
+    "highlight": "Intimer Naturhafen mit blauen Gewässern und Blick auf die Serra de Llevant.",
+    "features": [
+      "Geschützter Naturhafen, ruhige Gewässer",
+      "Intimer und weniger belebt als Cala Millor",
+      "1 km von unserer Basis entfernt – wir sind in wenigen Minuten da"
+    ],
+    "faq": [
+      {
+        "q": "Kann ich den Jet-Ski direkt in Cala Bona buchen?",
+        "a": "Ja. Kontaktieren Sie uns per WhatsApp, und wir bestätigen den genauen Treffpunkt in Cala Bona. Der Service umfasst Lieferung und Abholung am vereinbarten Ort."
+      },
+      {
+        "q": "Wie lange dauert es von Ihrer Basis bis Cala Bona?",
+        "a": "Unsere Basis ist weniger als 1 km von Cala Bona entfernt. Wir bestätigen die Abfahrtszeit bei der Buchung und sind pünktlich vor Ort."
+      }
+    ],
+    "geo": { "lat": 39.6005, "lng": 3.4167 },
+    "image": "galeria-05.jpg",
+    "imageAlt": "Kristallklare Gewässer von Cala Bona, Mallorca"
+  },
+  {
+    "slug": "sa-coma",
+    "name": "Sa Coma",
+    "title": "Jet-Ski-Verleih in Sa Coma, Mallorca | JetExperience Baleares",
+    "description": "Jet-Ski mieten in Sa Coma, Mallorca. Kristallklare Gewässer, 2 km von unserer Basis entfernt. Moderne Sea-Doo, Schwimmweste inklusive. Einfache Buchung per WhatsApp.",
+    "h1": "Jet-Ski-Verleih in Sa Coma, Mallorca",
+    "intro1": "Sa Coma ist ein Naturstrand, weniger überlaufen als seine Nachbarn, mit kristallklarem Wasser und weißem Sandgrund. Nur 2 km auf dem Wasser von unserer Basis entfernt, ideal für alle, die die Ostküste Mallorcas in völliger Freiheit erkunden möchten.",
+    "intro2": "Die ruhigen, sauberen Gewässer machen Sa Coma zu einer der beliebtesten Routen unserer Kunden. Eine natürliche Umgebung, in der Jet-Ski-Fahren perfekt hineinpasst.",
+    "highlight": "Naturstrand mit weißem Sand, kristallklarem Wasser und wenig Touristen.",
+    "features": [
+      "Naturstrand, weniger überlaufen und ruhiger",
+      "Kristallklares Wasser mit weißem Sandgrund",
+      "2 km auf dem Wasser von unserer Basis"
+    ],
+    "faq": [
+      {
+        "q": "Kann man in Sa Coma Jet-Ski fahren?",
+        "a": "Ja. Sa Coma ist eines unserer regulären Navigationsgebiete. Der Service umfasst die Lieferung an den von Ihnen gewünschten Strandabschnitt."
+      },
+      {
+        "q": "Wie weit ist Sa Coma von Ihrer Basis entfernt?",
+        "a": "Ungefähr 2 km auf dem Wasser von Costa de los Pinos. Mit dem Jet-Ski erreichen Sie es in wenigen Minuten."
+      }
+    ],
+    "geo": { "lat": 39.6112, "lng": 3.4178 },
+    "image": "galeria-06.jpg",
+    "imageAlt": "Türkisfarbene Gewässer von Sa Coma, Mallorca"
+  },
+  {
+    "slug": "porto-cristo",
+    "name": "Porto Cristo",
+    "title": "Jet-Ski-Verleih in Porto Cristo, Mallorca | JetExperience Baleares",
+    "description": "Jet-Ski-Route nach Porto Cristo von Costa de los Pinos. ~12 km unberührte Küste, versteckte Buchten und Klippen. Unser abenteuerlichstes Erlebnis. Per WhatsApp buchen.",
+    "h1": "Jet-Ski-Verleih in Porto Cristo, Mallorca",
+    "intro1": "Porto Cristo ist einer der spektakulärsten Naturhäfen Mallorcas, weltberühmt durch die Coves del Drach. Mit dem Jet-Ski nach Porto Cristo zu fahren ist unsere abenteuerlichste Route: ca. 12 km unberührte Küste mit versteckten Buchten und dramatischen Klippen.",
+    "intro2": "Diese Route ist mit dem Special 2-Stunden-Pack verfügbar und perfekt für erfahrene Fahrer, die die Ostküste Mallorcas in der Tiefe erkunden möchten. Verfügbarkeit per WhatsApp erfragen.",
+    "highlight": "Unsere spektakulärste Route: ~12 km unberührte Küste bis zum Naturhafen von Porto Cristo.",
+    "features": [
+      "~12 km Route mit unberührten Buchten und Klippen",
+      "Spektakulärer Naturhafen am Ende der Fahrt",
+      "Empfohlen mit dem Special 2-Stunden-Pack"
+    ],
+    "faq": [
+      {
+        "q": "Können wir Porto Cristo mit dem Jet-Ski erreichen?",
+        "a": "Ja, das ist unsere längste Route. Verfügbar mit dem Special 2-Stunden-Pack. Vorherige Erfahrung und gute Seebedingungen empfohlen. Verfügbarkeit anfragen."
+      },
+      {
+        "q": "Wie lange dauert die Route nach Porto Cristo?",
+        "a": "Ungefähr 2 Stunden hin und zurück in gemächlichem Tempo, mit Stopps um die Landschaft zu genießen. Deshalb empfehlen wir das 2-Stunden-Pack."
+      }
+    ],
+    "geo": { "lat": 39.5322, "lng": 3.3381 },
+    "image": "galeria-04.jpg",
+    "imageAlt": "Küsten-Jet-Ski-Route in Richtung Porto Cristo, Mallorca"
+  },
+  {
+    "slug": "costa-de-los-pinos",
+    "name": "Costa de los Pinos",
+    "title": "Jet-Ski-Verleih in Costa de los Pinos, Mallorca | JetExperience Baleares",
+    "description": "Unsere Jet-Ski-Basis befindet sich in Costa de los Pinos, Mallorca. Direkter Meerzugang von der Avenida del Pinar 43. Moderne Sea-Doo, Schwimmweste inklusive. Per WhatsApp buchen.",
+    "h1": "Jet-Ski-Verleih in Costa de los Pinos, Mallorca",
+    "intro1": "Costa de los Pinos ist der Ausgangspunkt für alle unsere Erlebnisse und unsere Hauptbasis. Dieses exklusive Wohngebiet zwischen Sa Coma und Cala Millor bietet direkten Meerzugang in privilegierten Gewässern, mit wenigen Badegästen und einer außergewöhnlichen Naturlandschaft.",
+    "intro2": "Wenn Sie in Costa de los Pinos oder in der Nähe untergebracht sind, startet der Service direkt von hier. Avenida del Pinar 43 ist der Ausgangspunkt für Cala Millor, Cala Bona, Sa Coma und Porto Cristo.",
+    "highlight": "Hauptservicebasis. Direkter Meerzugang von der Avenida del Pinar 43.",
+    "features": [
+      "Hauptbasis – direkte Abfahrt ohne Anreise",
+      "Ruhige, exklusive Gewässer, wenig Betrieb",
+      "Idealer Ausgangspunkt für alle Routen"
+    ],
+    "faq": [
+      {
+        "q": "Wo genau befindet sich Ihre Basis in Costa de los Pinos?",
+        "a": "In der Avenida del Pinar 43, Costa de los Pinos, 07560. Sie finden uns auf Google Maps unter JetExperience Baleares."
+      },
+      {
+        "q": "Liefern Sie in Costa de los Pinos?",
+        "a": "Ja, das ist sogar unser üblicher Lieferpunkt. Bestätigen Sie den genauen Ort bei der Buchung per WhatsApp."
+      }
+    ],
+    "geo": { "lat": 39.6377, "lng": 3.4145 },
+    "image": "galeria-11-new.jpg",
+    "imageAlt": "Luftaufnahme eines Jet-Skis in Costa de los Pinos, Mallorca"
+  }
+]
