@@ -5,9 +5,12 @@ let translations = {};
 
 async function initI18n() {
   const isEnPage = window.location.pathname.startsWith('/en/');
+  const isDePage = window.location.pathname.startsWith('/de/');
   const saved = localStorage.getItem('mjLang');
-  const browser = navigator.language?.startsWith('en') ? 'en' : 'es';
-  currentLang = isEnPage ? 'en' : (saved || browser);
+  const browser = navigator.language?.startsWith('en') ? 'en'
+                : navigator.language?.startsWith('de') ? 'de'
+                : 'es';
+  currentLang = isEnPage ? 'en' : isDePage ? 'de' : (saved || browser);
   await applyLang(currentLang);
   document.querySelectorAll('[data-lang-btn]').forEach(btn => {
     btn.addEventListener('click', () => switchLang(btn.dataset.langBtn));
@@ -49,6 +52,8 @@ function buildExpHref(expKey) {
   const price    = translations[`exp.${expKey}.price`]    || '';
   const msgLabel = currentLang === 'en'
     ? `Hi, I'd like to book: ${title} (${price}). Can you confirm availability?`
+    : currentLang === 'de'
+    ? `Hallo, ich möchte buchen: ${title} (${price}). Können Sie die Verfügbarkeit bestätigen?`
     : `Hola, me gustaría reservar: ${title} (${price}). ¿Podéis confirmarme disponibilidad?`;
   return `https://api.whatsapp.com/send/?phone=${CONFIG.whatsapp}&text=${encodeURIComponent(msgLabel)}`;
 }
@@ -116,11 +121,17 @@ function initContactForm() {
     const expText    = experience.options[experience.selectedIndex].text;
     const message    = form.querySelector('[name="message"]').value.trim();
 
-    const lines = ['Hola, me gustaría reservar una experiencia de jet ski:'];
-    lines.push(`• Nombre: ${name}`);
-    if (date)             lines.push(`• Fecha: ${date}`);
-    if (experience.value) lines.push(`• Experiencia: ${expText}`);
-    if (message)          lines.push(`• Mensaje: ${message}`);
+    const isDeForm = window.location.pathname.startsWith('/de/');
+    const isEnForm = window.location.pathname.startsWith('/en/');
+    const lines = isDeForm
+      ? ['Hallo, ich möchte ein Jet-Ski-Erlebnis buchen:']
+      : isEnForm
+      ? ["Hi, I'd like to book a jet ski experience:"]
+      : ['Hola, me gustaría reservar una experiencia de jet ski:'];
+    lines.push(isDeForm ? `• Name: ${name}` : isEnForm ? `• Name: ${name}` : `• Nombre: ${name}`);
+    if (date)             lines.push(isDeForm ? `• Datum: ${date}` : isEnForm ? `• Date: ${date}` : `• Fecha: ${date}`);
+    if (experience.value) lines.push(isDeForm ? `• Erlebnis: ${expText}` : isEnForm ? `• Experience: ${expText}` : `• Experiencia: ${expText}`);
+    if (message)          lines.push(isDeForm ? `• Nachricht: ${message}` : isEnForm ? `• Message: ${message}` : `• Mensaje: ${message}`);
 
     const text = encodeURIComponent(lines.join('\n'));
     window.open(`https://api.whatsapp.com/send/?phone=${CONFIG.whatsapp}&text=${text}`, '_blank');
