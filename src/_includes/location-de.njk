@@ -1,0 +1,107 @@
+---
+layout: base.njk
+---
+{% set loc = locationsDe | getLocation(locationSlug) %}
+
+<nav class="container py-3" aria-label="Breadcrumb">
+  <ol class="breadcrumb mb-0">
+    <li class="breadcrumb-item"><a href="/de/">Startseite</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Jet-Ski {{ loc.name }}</li>
+  </ol>
+</nav>
+
+<section class="feature-section py-section bg-light-brand">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <h1 class="section-title mb-4">{{ loc.h1 }}</h1>
+        <p class="feature-desc">{{ loc.intro1 }}</p>
+        <p class="feature-desc">{{ loc.intro2 }}</p>
+        <a href="https://api.whatsapp.com/send/?phone=34618842609&text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Jet-Ski%20in%20{{ loc.name | urlencode }}%20buchen.%20K%C3%B6nnen%20Sie%20die%20Verf%C3%BCgbarkeit%20best%C3%A4tigen%3F"
+           class="btn-cta mt-3" target="_blank" rel="noopener">
+          In {{ loc.name }} buchen →
+        </a>
+      </div>
+      <div class="col-lg-6">
+        <img src="/assets/img/{{ loc.image }}"
+             alt="{{ loc.imageAlt }}"
+             loading="lazy"
+             class="rounded-4 shadow-lg w-100">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-section bg-white">
+  <div class="container">
+    <p class="feature-desc fst-italic text-muted mb-4">{{ loc.highlight }}</p>
+    <ul class="checklist">
+      {% for feat in loc.features %}
+      <li class="checklist__item checklist__item--yes">{{ feat }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="py-section bg-dark-brand">
+  <div class="container text-center">
+    <h2 class="section-title section-title--light mb-4">Bereit zum Fahren in {{ loc.name }}?</h2>
+    <a href="https://api.whatsapp.com/send/?phone=34618842609&text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Jet-Ski%20in%20{{ loc.name | urlencode }}%20buchen.%20K%C3%B6nnen%20Sie%20die%20Verf%C3%BCgbarkeit%20best%C3%A4tigen%3F"
+       class="btn-cta btn-cta--dark" target="_blank" rel="noopener">
+      Per WhatsApp buchen
+    </a>
+  </div>
+</section>
+
+<section class="py-section bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-4 mb-lg-0">
+        <h2 class="section-title">Häufig gestellte Fragen</h2>
+      </div>
+      <div class="col-lg-7">
+        <div class="accordion" id="faqLocation">
+          {% for item in loc.faq %}
+          <div class="accordion-item faq-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button"
+                data-bs-toggle="collapse" data-bs-target="#faqL{{ loop.index }}">
+                {{ item.q }}
+              </button>
+            </h3>
+            <div id="faqL{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#faqLocation">
+              <div class="accordion-body faq-body">{{ item.a }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container py-4 text-center">
+  <a href="/de/" class="btn-outline-light-brand">← Zurück zur Startseite</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://jetexperiencemallorca.com/de/"},
+        {"@type": "ListItem", "position": 2, "name": "{{ loc.h1 }}"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "{{ loc.h1 }}",
+      "provider": {"@id": "https://jetexperiencemallorca.com/#business"},
+      "areaServed": {"@type": "Place", "name": "{{ loc.name }}, Mallorca"},
+      "url": "https://jetexperiencemallorca.com/de/jet-ski-{{ loc.slug }}/"
+    }
+  ]
+}
+</script>
