@@ -87,15 +87,17 @@
         </div>
 
         <!-- Links rápidos -->
-        {% set fp = '/en/' if currentLang == 'en' else '/' %}
+        {% if currentLang == 'en' %}{% set fp = '/en/' %}{% elif currentLang == 'de' %}{% set fp = '/de/' %}{% else %}{% set fp = '/' %}{% endif %}
         <div class="footer-col">
-          <h3 class="footer-col__title">{% if currentLang == 'en' %}Quick links{% else %}Enlaces rápidos{% endif %}</h3>
-          <a href="{{ fp }}#hero">{% if currentLang == 'en' %}Home{% else %}Inicio{% endif %}</a>
-          <a href="{{ fp }}#experiencias">{% if currentLang == 'en' %}Prices{% else %}Tarifas{% endif %}</a>
-          <a href="{{ fp }}#galeria">{% if currentLang == 'en' %}Gallery{% else %}Galería{% endif %}</a>
-          <a href="{{ fp }}#contacto">{% if currentLang == 'en' %}Contact{% else %}Contacto{% endif %}</a>
+          <h3 class="footer-col__title">{% if currentLang == 'en' %}Quick links{% elif currentLang == 'de' %}Schnelllinks{% else %}Enlaces rápidos{% endif %}</h3>
+          <a href="{{ fp }}#hero">{% if currentLang == 'en' %}Home{% elif currentLang == 'de' %}Startseite{% else %}Inicio{% endif %}</a>
+          <a href="{{ fp }}#experiencias">{% if currentLang == 'en' %}Prices{% elif currentLang == 'de' %}Preise{% else %}Tarifas{% endif %}</a>
+          <a href="{{ fp }}#galeria">{% if currentLang == 'en' %}Gallery{% elif currentLang == 'de' %}Galerie{% else %}Galería{% endif %}</a>
+          <a href="{{ fp }}#contacto">{% if currentLang == 'en' %}Contact{% elif currentLang == 'de' %}Kontakt{% else %}Contacto{% endif %}</a>
           {% if currentLang == 'en' %}
           <a href="/en/about-us/">About Us</a>
+          {% elif currentLang == 'de' %}
+          <a href="/de/about-us/">Über uns</a>
           {% else %}
           <a href="/sobre-nosotros/">Sobre Nosotros</a>
           {% endif %}
@@ -103,7 +105,7 @@
 
         <!-- Contacto -->
         <div class="footer-col">
-          <h3 class="footer-col__title">Contacto</h3>
+          <h3 class="footer-col__title">{% if currentLang == 'en' %}Contact{% elif currentLang == 'de' %}Kontakt{% else %}Contacto{% endif %}</h3>
           <address style="font-style:normal;">
             <span data-i18n="contact.address">Avenida del Pinar 43, Costa de los Pinos, Cala Millor</span>
             <a data-phone href="tel:+34618842609">+34 618 842 609</a>
@@ -112,9 +114,9 @@
         </div>
 
         <!-- Zonas de servicio -->
-        {% set lp = '/en/jet-ski-' if currentLang == 'en' else '/jet-ski-' %}
+        {% if currentLang == 'en' %}{% set lp = '/en/jet-ski-' %}{% elif currentLang == 'de' %}{% set lp = '/de/jet-ski-' %}{% else %}{% set lp = '/jet-ski-' %}{% endif %}
         <div class="footer-col">
-          <h3 class="footer-col__title">{% if currentLang == 'en' %}Service areas{% else %}Zonas de servicio{% endif %}</h3>
+          <h3 class="footer-col__title">{% if currentLang == 'en' %}Service areas{% elif currentLang == 'de' %}Servicebereiche{% else %}Zonas de servicio{% endif %}</h3>
           <a href="{{ lp }}cala-millor/">Cala Millor</a>
           <a href="{{ lp }}cala-bona/">Cala Bona</a>
           <a href="{{ lp }}sa-coma/">Sa Coma</a>
@@ -125,10 +127,10 @@
       </div>
 
       <div class="footer-bottom">
-        <span>{% if currentLang == 'en' %}© 2026 JetExperience Baleares. All rights reserved.{% else %}© 2026 JetExperience Baleares. Todos los derechos reservados.{% endif %}</span>
+        <span>{% if currentLang == 'en' %}© 2026 JetExperience Baleares. All rights reserved.{% elif currentLang == 'de' %}© 2026 JetExperience Baleares. Alle Rechte vorbehalten.{% else %}© 2026 JetExperience Baleares. Todos los derechos reservados.{% endif %}</span>
         <div class="footer-legal-links">
-          <a href="/legal/aviso-legal/">{% if currentLang == 'en' %}Legal notice{% else %}Aviso legal{% endif %}</a>
-          <a href="/legal/politica-privacidad/">{% if currentLang == 'en' %}Privacy policy{% else %}Política de privacidad{% endif %}</a>
+          <a href="/legal/aviso-legal/">{% if currentLang == 'en' %}Legal notice{% elif currentLang == 'de' %}Impressum{% else %}Aviso legal{% endif %}</a>
+          <a href="/legal/politica-privacidad/">{% if currentLang == 'en' %}Privacy policy{% elif currentLang == 'de' %}Datenschutz{% else %}Política de privacidad{% endif %}</a>
           <a href="https://www.instagram.com/jetexperiencebaleares" target="_blank" rel="noopener" class="social-link">
             <i class="bi bi-instagram"></i> Instagram
           </a>
