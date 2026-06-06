@@ -4,9 +4,10 @@ let currentLang = 'es';
 let translations = {};
 
 async function initI18n() {
+  const isEnPage = window.location.pathname.startsWith('/en/');
   const saved = localStorage.getItem('mjLang');
   const browser = navigator.language?.startsWith('en') ? 'en' : 'es';
-  currentLang = saved || browser;
+  currentLang = isEnPage ? 'en' : (saved || browser);
   await applyLang(currentLang);
   document.querySelectorAll('[data-lang-btn]').forEach(btn => {
     btn.addEventListener('click', () => switchLang(btn.dataset.langBtn));
@@ -15,7 +16,7 @@ async function initI18n() {
 }
 
 async function applyLang(lang) {
-  const res = await fetch(`assets/i18n/${lang}.json?v=202605131109`);
+  const res = await fetch(`/assets/i18n/${lang}.json?v=202605131109`);
   translations = await res.json();
   document.documentElement.lang = lang;
   document.querySelectorAll('[data-i18n]').forEach(el => {

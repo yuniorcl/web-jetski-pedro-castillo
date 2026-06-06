@@ -18,4 +18,5 @@
   ExpiresByType image/jpeg "access plus 6 months"
   ExpiresByType image/png "access plus 6 months"
   ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/avif "access plus 6 months"
 </IfModule>
