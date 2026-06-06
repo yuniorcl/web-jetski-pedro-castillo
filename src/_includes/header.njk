@@ -1,4 +1,4 @@
-  {% set homePath = '/en/' if currentLang == 'en' else '/' %}
+  {% set homePath = '/en/' if currentLang == 'en' else '/de/' if currentLang == 'de' else '/' %}
   <header id="site-header" class="site-header">
       <div class="container-fluid px-4">
         <nav class="navbar navbar-expand-lg p-0">
@@ -18,12 +18,12 @@
           <!-- Nav links -->
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#hero" data-i18n="nav.home">{% if currentLang == 'en' %}Home{% else %}Inicio{% endif %}</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#experiencias" data-i18n="nav.prices">{% if currentLang == 'en' %}Prices{% else %}Tarifas{% endif %}</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#galeria" data-i18n="nav.gallery">{% if currentLang == 'en' %}Gallery{% else %}Galería{% endif %}</a></li>
-              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#contacto" data-i18n="nav.contact">{% if currentLang == 'en' %}Contact{% else %}Contacto{% endif %}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#hero" data-i18n="nav.home">{% if currentLang == 'en' %}Home{% elif currentLang == 'de' %}Startseite{% else %}Inicio{% endif %}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#experiencias" data-i18n="nav.prices">{% if currentLang == 'en' %}Prices{% elif currentLang == 'de' %}Preise{% else %}Tarifas{% endif %}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#galeria" data-i18n="nav.gallery">{% if currentLang == 'en' %}Gallery{% elif currentLang == 'de' %}Galerie{% else %}Galería{% endif %}</a></li>
+              <li class="nav-item"><a class="nav-link" href="{{ homePath }}#contacto" data-i18n="nav.contact">{% if currentLang == 'en' %}Contact{% elif currentLang == 'de' %}Kontakt{% else %}Contacto{% endif %}</a></li>
               <li class="nav-item ms-lg-2">
-                <a class="btn-cta btn-cta--sm" href="{{ homePath }}#contacto" data-i18n="nav.book">{% if currentLang == 'en' %}Book now{% else %}Reservar ahora{% endif %}</a>
+                <a class="btn-cta btn-cta--sm" href="{{ homePath }}#contacto" data-i18n="nav.book">{% if currentLang == 'en' %}Book now{% elif currentLang == 'de' %}Jetzt buchen{% else %}Reservar ahora{% endif %}</a>
               </li>
               <!-- Language switcher -->
               <li class="nav-item ms-lg-2">
@@ -31,6 +31,8 @@
                   <a href="{{ langEs }}" class="lang-btn{% if currentLang == 'es' %} active{% endif %}">ES</a>
                   <span class="lang-sep">|</span>
                   <a href="{{ langEn }}" class="lang-btn{% if currentLang == 'en' %} active{% endif %}">EN</a>
+                  <span class="lang-sep">|</span>
+                  <a href="{{ langDe }}" class="lang-btn{% if currentLang == 'de' %} active{% endif %}">DE</a>
                 </div>
               </li>
             </ul>
