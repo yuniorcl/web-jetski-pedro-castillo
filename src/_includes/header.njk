@@ -1,4 +1,4 @@
-  {% set homePath = '/en/' if currentLang == 'en' else '/de/' if currentLang == 'de' else '/' %}
+  {% if currentLang == 'en' %}{% set homePath = '/en/' %}{% elif currentLang == 'de' %}{% set homePath = '/de/' %}{% else %}{% set homePath = '/' %}{% endif %}
   <header id="site-header" class="site-header">
       <div class="container-fluid px-4">
         <nav class="navbar navbar-expand-lg p-0">
