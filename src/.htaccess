@@ -1,3 +1,20 @@
+# Language auto-detection — redirect root visitors to their browser language
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # German browsers → /de/
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteCond %{HTTP:Accept-Language} ^de [NC]
+  RewriteRule ^$ /de/ [R=302,L]
+
+  # English browsers → /en/
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteCond %{HTTP:Accept-Language} ^en [NC]
+  RewriteRule ^$ /en/ [R=302,L]
+
+  # All other languages stay at / (Spanish default)
+</IfModule>
+
 <IfModule mod_headers.c>
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set X-XSS-Protection "1; mode=block"
