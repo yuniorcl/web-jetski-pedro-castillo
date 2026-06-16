@@ -6,15 +6,8 @@ let translations = {};
 async function initI18n() {
   const isEnPage = window.location.pathname.startsWith('/en/');
   const isDePage = window.location.pathname.startsWith('/de/');
-  const saved = localStorage.getItem('mjLang');
-  const browser = navigator.language?.startsWith('en') ? 'en'
-                : navigator.language?.startsWith('de') ? 'de'
-                : 'es';
-  currentLang = isEnPage ? 'en' : isDePage ? 'de' : (saved || browser);
+  currentLang = isEnPage ? 'en' : isDePage ? 'de' : 'es';
   await applyLang(currentLang);
-  document.querySelectorAll('[data-lang-btn]').forEach(btn => {
-    btn.addEventListener('click', () => switchLang(btn.dataset.langBtn));
-  });
   updateLangButtons();
 }
 
