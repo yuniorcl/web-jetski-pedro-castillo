@@ -357,6 +357,7 @@ img { max-width: 100%; height: auto; }
   gap: 20px;
 }
 @media (max-width: 767px) { .exp-grid { grid-template-columns: 1fr; } }
+@media (min-width: 992px) { .exp-grid { grid-template-columns: repeat(3, 1fr); } }
 
 .exp-card {
   position: relative;

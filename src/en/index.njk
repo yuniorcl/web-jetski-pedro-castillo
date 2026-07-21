@@ -135,7 +135,27 @@ currentLang: en
             </div>
           </div>
 
-          <!-- Card 3: Special Offer -->
+          <!-- Card 3: Long Family Route -->
+          <div class="exp-card">
+            <img src="/assets/img/ruta-familia-4h.webp"
+              alt="Mother and daughter on jet ski with life jackets Costa de los Pinos Mallorca" loading="lazy" class="exp-card__img">
+            <div class="exp-card__overlay"></div>
+            <span class="exp-card__badge">👨‍👩‍👧 FAMILY FRIENDLY</span>
+            <div class="exp-card__body">
+              <p class="exp-card__desc">
+                <span>4h at your own pace · Perfect with kids</span>
+                <span role="button" tabindex="0" class="exp-info-btn" data-i18n-tooltip="exp.family.tooltip" aria-label="More information"><i class="bi bi-info-circle"></i></span>
+              </p>
+              <div class="exp-card__footer">
+                <div>
+                  <span class="exp-card__price">4h · 300€</span>
+                </div>
+                <a href="#" class="exp-card__btn" data-whatsapp data-exp-key="family">Book →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Special Offer -->
           <div class="exp-card--offer">
             <div class="exp-card--offer__img-wrap">
               <img src="/assets/img/oferta-especial.jpg"
@@ -204,6 +224,43 @@ currentLang: en
 
         </div>
       </div>
+    </section>
+
+    <!-- ===== ROUTES (TEASER) ===== -->
+    <section id="rutas" class="feature-section py-section bg-light-brand">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="section-label">Explore the coast</span>
+            <h2 class="section-title mb-4">Discover the best jet ski routes in Mallorca</h2>
+            <p class="feature-desc">Explore the spectacular east coast of Mallorca from the Port of Costa de los Pinos. Our routes let you discover white sand beaches, hidden coves, crystal-clear waters and some of the most beautiful landscapes on the island.</p>
+            <p class="feature-desc">From Costa de los Pinos you can ride all the way to iconic spots like Cala Bona, Cala Millor, Sa Coma, S'Illot, Porto Cristo, Cala Varqués, Cala Agulla or Cala Mesquida. Every route is designed so you can enjoy the sea safely, with total freedom, living a unique experience.</p>
+            <a href="/rutas/" class="btn-cta mt-3">Discover all routes →</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a href="#rutamapa-norte">
+              <img src="/assets/img/mapa-ruta-norte-mallorca.jpg"
+                alt="Map of the North Route by jet ski from Costa de los Pinos to Cala Ratjada, Cala Agulla and Cala Mesquida"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#rutamapa-sur">
+              <img src="/assets/img/mapa-ruta-sur-mallorca.jpg"
+                alt="Map of the South Route by jet ski from Costa de los Pinos to Cala Millor, Sa Coma and Porto Cristo"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox CSS :target -->
+      <div id="rutamapa-norte" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="/assets/img/mapa-ruta-norte-mallorca.jpg" alt="Map of the North Route by jet ski from Costa de los Pinos to Cala Ratjada, Cala Agulla and Cala Mesquida" loading="lazy"></div>
+      <div id="rutamapa-sur" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="/assets/img/mapa-ruta-sur-mallorca.jpg" alt="Map of the South Route by jet ski from Costa de los Pinos to Cala Millor, Sa Coma and Porto Cristo" loading="lazy"></div>
     </section>
 
     <!-- ===== FEATURES ===== -->
@@ -566,6 +623,7 @@ currentLang: en
                   <option value="">Type of experience</option>
                   <option value="classic">Popular – 1h · 130€</option>
                   <option value="private">Special Pack – 2h · 200€</option>
+                  <option value="family">Family Route – 4h · 300€</option>
                 </select>
               </div>
               <div class="mb-4">

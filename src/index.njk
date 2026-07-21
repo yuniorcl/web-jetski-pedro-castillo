@@ -134,7 +134,27 @@ currentLang: es
             </div>
           </div>
 
-          <!-- Card 3: Oferta Especial -->
+          <!-- Card 3: Ruta Larga en Familia -->
+          <div class="exp-card">
+            <img src="assets/img/ruta-familia-4h.webp"
+              alt="Madre e hija en moto de agua con chalecos salvavidas Costa de los Pinos Mallorca" loading="lazy" class="exp-card__img">
+            <div class="exp-card__overlay"></div>
+            <span class="exp-card__badge" data-i18n="exp.family.badge">👨‍👩‍👧 EN FAMILIA</span>
+            <div class="exp-card__body">
+              <p class="exp-card__desc">
+                <span data-i18n="exp.family.desc">4h a tu ritmo · Perfecta con niños</span>
+                <span role="button" tabindex="0" class="exp-info-btn" data-i18n-tooltip="exp.family.tooltip" aria-label="Más información"><i class="bi bi-info-circle"></i></span>
+              </p>
+              <div class="exp-card__footer">
+                <div>
+                  <span class="exp-card__price" data-i18n="exp.family.price">4h · 300€</span>
+                </div>
+                <a href="#" class="exp-card__btn" data-whatsapp data-exp-key="family" data-i18n="exp.book">Reservar →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Oferta Especial -->
           <div class="exp-card--offer">
             <div class="exp-card--offer__img-wrap">
               <img src="/assets/img/oferta-especial.jpg"
@@ -203,6 +223,43 @@ currentLang: es
 
         </div>
       </div>
+    </section>
+
+    <!-- ===== RUTAS (TEASER) ===== -->
+    <section id="rutas" class="feature-section py-section bg-light-brand">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="section-label" data-i18n="routes.label">Explora la costa</span>
+            <h2 class="section-title mb-4" data-i18n="routes.title">Descubre las mejores rutas en moto de agua de Mallorca</h2>
+            <p class="feature-desc" data-i18n="routes.desc1">Explora la espectacular costa este de Mallorca desde el Puerto de Costa de los Pinos. Nuestras rutas permiten descubrir playas de arena blanca, calas escondidas, aguas cristalinas y algunos de los paisajes más bonitos de la isla.</p>
+            <p class="feature-desc" data-i18n="routes.desc2">Desde Costa de los Pinos podrás navegar hasta lugares emblemáticos como Cala Bona, Cala Millor, Sa Coma, S'Illot, Porto Cristo, Cala Varqués, Cala Agulla o Cala Mesquida. Cada recorrido está diseñado para disfrutar del mar de forma segura, con total libertad y viviendo una experiencia única.</p>
+            <a href="/rutas/" class="btn-cta mt-3" data-i18n="routes.cta">Descubrir todas las rutas →</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a href="#rutamapa-norte">
+              <img src="assets/img/mapa-ruta-norte-mallorca.jpg"
+                alt="Mapa de la Ruta Norte en moto de agua desde Costa de los Pinos hacia Cala Ratjada, Cala Agulla y Cala Mesquida"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#rutamapa-sur">
+              <img src="assets/img/mapa-ruta-sur-mallorca.jpg"
+                alt="Mapa de la Ruta Sur en moto de agua desde Costa de los Pinos hacia Cala Millor, Sa Coma y Porto Cristo"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox CSS :target -->
+      <div id="rutamapa-norte" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="assets/img/mapa-ruta-norte-mallorca.jpg" alt="Mapa de la Ruta Norte en moto de agua desde Costa de los Pinos hacia Cala Ratjada, Cala Agulla y Cala Mesquida" loading="lazy"></div>
+      <div id="rutamapa-sur" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="assets/img/mapa-ruta-sur-mallorca.jpg" alt="Mapa de la Ruta Sur en moto de agua desde Costa de los Pinos hacia Cala Millor, Sa Coma y Porto Cristo" loading="lazy"></div>
     </section>
 
     <!-- ===== CARACTERÍSTICAS ===== -->
@@ -565,6 +622,7 @@ currentLang: es
                   <option value="" data-i18n="contact.form.experience">Tipo de experiencia</option>
                   <option value="classic" data-i18n="contact.form.exp.classic">Popular – 1h · 130€</option>
                   <option value="private" data-i18n="contact.form.exp.private">Pack Especial – 2h · 200€</option>
+                  <option value="family" data-i18n="contact.form.exp.family">En Familia – 4h · 300€</option>
                 </select>
               </div>
               <div class="mb-4">

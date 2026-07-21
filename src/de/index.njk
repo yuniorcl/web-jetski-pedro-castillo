@@ -135,7 +135,27 @@ currentLang: de
             </div>
           </div>
 
-          <!-- Card 3: Special Offer -->
+          <!-- Card 3: Lange Familienroute -->
+          <div class="exp-card">
+            <img src="/assets/img/ruta-familia-4h.webp"
+              alt="Mutter und Tochter auf Jet-Ski mit Schwimmwesten Costa de los Pinos Mallorca" loading="lazy" class="exp-card__img">
+            <div class="exp-card__overlay"></div>
+            <span class="exp-card__badge" data-i18n="exp.family.badge">👨‍👩‍👧 FAMILIENFREUNDLICH</span>
+            <div class="exp-card__body">
+              <p class="exp-card__desc">
+                <span data-i18n="exp.family.desc">4h in Ihrem Tempo · Perfekt mit Kindern</span>
+                <span role="button" tabindex="0" class="exp-info-btn" data-i18n-tooltip="exp.family.tooltip" aria-label="More information"><i class="bi bi-info-circle"></i></span>
+              </p>
+              <div class="exp-card__footer">
+                <div>
+                  <span class="exp-card__price" data-i18n="exp.family.price">4h · 300€</span>
+                </div>
+                <a href="#" class="exp-card__btn" data-whatsapp data-exp-key="family" data-i18n="exp.book">Buchen →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Special Offer -->
           <div class="exp-card--offer">
             <div class="exp-card--offer__img-wrap">
               <img src="/assets/img/oferta-especial.jpg"
@@ -204,6 +224,43 @@ currentLang: de
 
         </div>
       </div>
+    </section>
+
+    <!-- ===== ROUTEN (TEASER) ===== -->
+    <section id="rutas" class="feature-section py-section bg-light-brand">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-8">
+            <span class="section-label" data-i18n="routes.label">Entdecken Sie die Küste</span>
+            <h2 class="section-title mb-4" data-i18n="routes.title">Entdecken Sie die besten Jet-Ski-Routen auf Mallorca</h2>
+            <p class="feature-desc" data-i18n="routes.desc1">Erkunden Sie die spektakuläre Ostküste Mallorcas vom Hafen von Costa de los Pinos aus. Unsere Routen führen Sie zu weißen Sandstränden, versteckten Buchten, kristallklarem Wasser und einigen der schönsten Landschaften der Insel.</p>
+            <p class="feature-desc" data-i18n="routes.desc2">Von Costa de los Pinos aus erreichen Sie mit dem Jet-Ski Orte wie Cala Bona, Cala Millor, Sa Coma, S'Illot, Porto Cristo, Cala Varqués, Cala Agulla oder Cala Mesquida. Jede Route ist so gestaltet, dass Sie das Meer sicher, frei und mit einem einzigartigen Erlebnis genießen können.</p>
+            <a href="/rutas/" class="btn-cta mt-3" data-i18n="routes.cta">Alle Routen entdecken →</a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <a href="#rutamapa-norte">
+              <img src="/assets/img/mapa-ruta-norte-mallorca.jpg"
+                alt="Karte der Nordroute mit dem Jet-Ski von Costa de los Pinos nach Cala Ratjada, Cala Agulla und Cala Mesquida"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+          <div class="col-md-6">
+            <a href="#rutamapa-sur">
+              <img src="/assets/img/mapa-ruta-sur-mallorca.jpg"
+                alt="Karte der Südroute mit dem Jet-Ski von Costa de los Pinos nach Cala Millor, Sa Coma und Porto Cristo"
+                loading="lazy" class="rounded-4 shadow-lg w-100">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox CSS :target -->
+      <div id="rutamapa-norte" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="/assets/img/mapa-ruta-norte-mallorca.jpg" alt="Karte der Nordroute mit dem Jet-Ski von Costa de los Pinos nach Cala Ratjada, Cala Agulla und Cala Mesquida" loading="lazy"></div>
+      <div id="rutamapa-sur" class="lightbox"><a href="#rutas" class="lightbox__close">✕</a>
+        <img src="/assets/img/mapa-ruta-sur-mallorca.jpg" alt="Karte der Südroute mit dem Jet-Ski von Costa de los Pinos nach Cala Millor, Sa Coma und Porto Cristo" loading="lazy"></div>
     </section>
 
     <!-- ===== FEATURES ===== -->
@@ -566,6 +623,7 @@ currentLang: de
                   <option value="" data-i18n="contact.form.experience">Art des Erlebnisses</option>
                   <option value="classic" data-i18n="contact.form.exp.classic">Beliebt – 1h · 130€</option>
                   <option value="private" data-i18n="contact.form.exp.private">Special Pack – 2h · 200€</option>
+                  <option value="family" data-i18n="contact.form.exp.family">Familienroute – 4h · 300€</option>
                 </select>
               </div>
               <div class="mb-4">
