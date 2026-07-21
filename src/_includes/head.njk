@@ -17,8 +17,8 @@
   <meta name="description" content="{{ pageDescription or 'Alquila una moto de agua en Cala Millor, Mallorca. Con licencia náutica. Sea-Doo modernos, chaleco incluido. Rutas de 1h (130€) y 2h (200€). Reserva fácil por WhatsApp.' }}">
   <link rel="canonical" href="{{ site.url }}{{ pageCanonical or '/' }}">
   <link rel="alternate" hreflang="es" href="{{ site.url }}{{ langEs }}">
-  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ langEn }}">
-  <link rel="alternate" hreflang="de" href="{{ site.url }}{{ langDe }}">
+  {% if langEn %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ langEn }}">{% endif %}
+  {% if langDe %}<link rel="alternate" hreflang="de" href="{{ site.url }}{{ langDe }}">{% endif %}
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ langEs }}">
 
   <!-- Open Graph -->
