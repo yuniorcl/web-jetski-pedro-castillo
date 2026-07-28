@@ -456,6 +456,10 @@ img { max-width: 100%; height: auto; }
 .exp-card__btn--light:hover { background: #f0f0f0; color: var(--color-cta); }
 
 /* ---- Tarjeta Oferta Especial ---- */
+/* Oculta temporalmente: quitar esta regla para volver a mostrarla */
+.exp-card--offer {
+  display: none !important;
+}
 .exp-card--offer {
   position: relative;
   border-radius: var(--radius-card);
