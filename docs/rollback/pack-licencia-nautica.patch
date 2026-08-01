@@ -1,0 +1,390 @@
+diff --git a/src/_includes/head.njk b/src/_includes/head.njk
+index dbe1062..c70a311 100644
+--- a/src/_includes/head.njk
++++ b/src/_includes/head.njk
+@@ -159,15 +159,6 @@
+             "availability": "https://schema.org/InStock",
+             "url": "https://jetexperiencemallorca.com/#experiencias"
+           },
+-          {
+-            "@type": "Offer",
+-            "name": "Oferta Especial: Curso Licencia Náutica + 2h Jet Ski",
+-            "description": "Pack completo: curso de licencia náutica homologada más 2 horas de alquiler de moto de agua en Cala Millor, Mallorca.",
+-            "price": "260",
+-            "priceCurrency": "EUR",
+-            "availability": "https://schema.org/InStock",
+-            "url": "https://jetexperiencemallorca.com/#experiencias"
+-          },
+           {
+             "@type": "Offer",
+             "name": "Ruta Larga en Familia Jet Ski 4 horas",
+diff --git a/src/alquiler-moto-agua-mallorca.njk b/src/alquiler-moto-agua-mallorca.njk
+index 3946254..1d6dfac 100644
+--- a/src/alquiler-moto-agua-mallorca.njk
++++ b/src/alquiler-moto-agua-mallorca.njk
+@@ -55,12 +55,6 @@ currentLang: es
+           <span style="font-size:1.8rem;font-weight:800;color:#fff;">2h · 185€</span>
+         </div>
+       </div>
+-      <div class="col-md-4">
+-        <div style="border-radius:16px;overflow:hidden;background:#1a3a55;padding:2rem;text-align:center;">
+-          <p style="color:rgba(255,255,255,0.8);margin-bottom:0.5rem;">Curso licencia náutica incluido</p>
+-          <span style="font-size:1.8rem;font-weight:800;color:#fff;">Pack · 260€</span>
+-        </div>
+-      </div>
+     </div>
+   </div>
+ </section>
+diff --git a/src/alquiler-seadoo-mallorca.njk b/src/alquiler-seadoo-mallorca.njk
+index 1218ed9..11db7fc 100644
+--- a/src/alquiler-seadoo-mallorca.njk
++++ b/src/alquiler-seadoo-mallorca.njk
+@@ -96,7 +96,6 @@ currentLang: es
+         <ul class="checklist">
+           <li class="checklist__item checklist__item--yes">1 hora — 110€</li>
+           <li class="checklist__item checklist__item--yes">2 horas — 185€</li>
+-          <li class="checklist__item checklist__item--yes">Pack Licencia + 2h — 260€</li>
+         </ul>
+       </div>
+     </div>
+diff --git a/src/de/index.njk b/src/de/index.njk
+index a2e7614..0393993 100644
+--- a/src/de/index.njk
++++ b/src/de/index.njk
+@@ -155,25 +155,6 @@ currentLang: de
+             </div>
+           </div>
+ 
+-          <!-- Card 4: Special Offer -->
+-          <div class="exp-card--offer">
+-            <div class="exp-card--offer__img-wrap">
+-              <img src="/assets/img/oferta-especial.jpg"
+-                alt="Special offer 260€ nautical licence course + 2h jet ski Mallorca" loading="lazy"
+-                width="1024" height="1355"
+-                class="exp-card--offer__img">
+-            </div>
+-            <div class="exp-card--offer__overlay"></div>
+-            <span class="exp-card--offer__badge" data-i18n="exp.oferta.badge">🔥 ANGEBOT</span>
+-            <div class="exp-card--offer__strip">
+-              <p class="exp-card--offer__title" data-i18n="exp.oferta.title">Sonderangebot</p>
+-              <a href="#" class="btn-whatsapp" data-whatsapp data-exp-key="oferta">
+-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+-                <span data-i18n="exp.oferta.cta">Anfragen →</span>
+-              </a>
+-            </div>
+-          </div>
+-
+         </div>
+         <p class="text-center mt-4" style="color:rgba(255,255,255,0.5); font-size:0.8rem;" data-i18n="exp.note">
+           Richtpreise. Verfügbarkeit und Bedingungen prüfen.
+diff --git a/src/de/jet-ski-rental-mallorca.njk b/src/de/jet-ski-rental-mallorca.njk
+index d13d97f..1532bcb 100644
+--- a/src/de/jet-ski-rental-mallorca.njk
++++ b/src/de/jet-ski-rental-mallorca.njk
+@@ -53,12 +53,6 @@ currentLang: de
+           <span style="font-size:1.8rem;font-weight:800;color:#fff;">2h · 185€</span>
+         </div>
+       </div>
+-      <div class="col-md-4">
+-        <div style="border-radius:16px;background:#1a3a55;padding:2rem;text-align:center;">
+-          <p style="color:rgba(255,255,255,0.8);margin-bottom:0.5rem;">Bootsführerscheinkurs inklusive</p>
+-          <span style="font-size:1.8rem;font-weight:800;color:#fff;">Pack · 260€</span>
+-        </div>
+-      </div>
+     </div>
+   </div>
+ </section>
+diff --git a/src/de/jet-ski-with-nautical-license-mallorca.njk b/src/de/jet-ski-with-nautical-license-mallorca.njk
+index 7d619cc..3eae54e 100644
+--- a/src/de/jet-ski-with-nautical-license-mallorca.njk
++++ b/src/de/jet-ski-with-nautical-license-mallorca.njk
+@@ -1,7 +1,7 @@
+ ---
+ layout: base.njk
+ pageTitle: "Jet-Ski-Verleih mit Bootsführerschein auf Mallorca | JetExperience Baleares"
+-pageDescription: "Für den Jet-Ski-Verleih auf Mallorca ist ein Bootsführerschein erforderlich. Erfahren Sie, welcher Führerschein gültig ist, und unser Sonderpack Führerschein + 2h für 260€."
++pageDescription: "Für den Jet-Ski-Verleih auf Mallorca ist ein Bootsführerschein erforderlich. Erfahren Sie, welcher Führerschein gültig ist und was Sie am Tag mitbringen müssen."
+ pageCanonical: "/de/jet-ski-with-nautical-license-mallorca/"
+ permalink: /de/jet-ski-with-nautical-license-mallorca/
+ langEs: "/moto-agua-con-licencia-mallorca/"
+@@ -23,8 +23,6 @@ currentLang: de
+       <div class="col-lg-7">
+         <h1 class="section-title mb-4">Jet-Ski-Verleih mit Bootsführerschein auf Mallorca</h1>
+         <p class="feature-desc">In Spanien ist für das Fahren eines Jet-Skis ein Sportbootführerschein oder eine höhere nautische Qualifikation erforderlich. Bei JetExperience Baleares prüfen wir die Unterlagen vor jeder Abfahrt, um ein sicheres und legales Erlebnis zu gewährleisten.</p>
+-        <p class="feature-desc">Wenn Sie noch keinen Führerschein haben, haben wir das perfekte Pack: einen zertifizierten Bootsführerscheinkurs plus 2 Stunden Verleih für nur 260€.</p>
+-        <a href="#pack-licence" class="btn-cta mt-3">Führerschein + Verleih Pack ansehen</a>
+       </div>
+       <div class="col-lg-5">
+         <img src="/assets/img/galeria-01-new.jpg" alt="Jet-Ski mit Bootsführerschein auf Mallorca"
+@@ -47,16 +45,6 @@ currentLang: de
+   </div>
+ </section>
+ 
+-<section id="pack-licence" class="py-section bg-dark-brand">
+-  <div class="container text-center">
+-    <span class="section-label" style="color:rgba(255,255,255,0.7)">Sonderangebot</span>
+-    <h2 class="section-title section-title--light mb-3">Bootsführerschein + 2h Jet-Ski Pack</h2>
+-    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;max-width:560px;margin:0 auto 1.5rem;">Zertifizierter Bootsführerscheinkurs plus 2 Stunden Verleih in Cala Millor. Alles für 260€.</p>
+-    <div style="font-size:3rem;font-weight:800;color:#fff;margin-bottom:1.5rem;">260€</div>
+-    <a href="#" class="btn-cta btn-cta--dark" data-whatsapp>Verfügbarkeit prüfen →</a>
+-  </div>
+-</section>
+-
+ <section class="py-section bg-light-brand">
+   <div class="container">
+     <div class="row">
+@@ -76,7 +64,7 @@ currentLang: de
+               <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqS2b">Kann ich einen Jet-Ski ohne Führerschein mieten?</button>
+             </h3>
+             <div id="faqS2b" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">Ohne Führerschein dürfen Sie nicht fahren. Als Passagier können Sie jedoch mit einem lizenzierten Fahrer mitfahren. Wenn Sie selbst fahren möchten, empfehlen wir unser Führerschein + 2h Jet-Ski Pack für 260€.</div>
++              <div class="accordion-body faq-body">Ohne Führerschein dürfen Sie nicht fahren. Als Passagier können Sie jedoch mit einem lizenzierten Fahrer mitfahren.</div>
+             </div>
+           </div>
+           <div class="accordion-item faq-item">
+@@ -84,7 +72,7 @@ currentLang: de
+               <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqS2c">Wo kann ich auf Mallorca einen Bootsführerschein machen?</button>
+             </h3>
+             <div id="faqS2c" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">Es gibt mehrere Segelschulen auf Mallorca, die den Sportbootführerscheinkurs anbieten. Wir bieten auch das Komplettpaket an: zertifizierter Kurs + 2 Stunden Verleih. Fragen Sie uns per WhatsApp.</div>
++              <div class="accordion-body faq-body">Es gibt mehrere Segelschulen auf Mallorca, die den Sportbootführerscheinkurs anbieten.</div>
+             </div>
+           </div>
+         </div>
+diff --git a/src/de/sea-doo-rental-mallorca.njk b/src/de/sea-doo-rental-mallorca.njk
+index e101c51..3c989a3 100644
+--- a/src/de/sea-doo-rental-mallorca.njk
++++ b/src/de/sea-doo-rental-mallorca.njk
+@@ -68,7 +68,6 @@ currentLang: de
+         <ul class="checklist">
+           <li class="checklist__item checklist__item--yes">1 Stunde — 110€</li>
+           <li class="checklist__item checklist__item--yes">2 Stunden — 185€</li>
+-          <li class="checklist__item checklist__item--yes">Führerschein + 2h Pack — 260€</li>
+         </ul>
+       </div>
+     </div>
+diff --git a/src/en/index.njk b/src/en/index.njk
+index ecf3e78..d4df64b 100644
+--- a/src/en/index.njk
++++ b/src/en/index.njk
+@@ -155,25 +155,6 @@ currentLang: en
+             </div>
+           </div>
+ 
+-          <!-- Card 4: Special Offer -->
+-          <div class="exp-card--offer">
+-            <div class="exp-card--offer__img-wrap">
+-              <img src="/assets/img/oferta-especial.jpg"
+-                alt="Special offer 260€ nautical licence course + 2h jet ski Mallorca" loading="lazy"
+-                width="1024" height="1355"
+-                class="exp-card--offer__img">
+-            </div>
+-            <div class="exp-card--offer__overlay"></div>
+-            <span class="exp-card--offer__badge">🔥 OFFER</span>
+-            <div class="exp-card--offer__strip">
+-              <p class="exp-card--offer__title">Special Offer</p>
+-              <a href="#" class="btn-whatsapp" data-whatsapp data-exp-key="oferta">
+-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+-                Ask us →
+-              </a>
+-            </div>
+-          </div>
+-
+         </div>
+         <p class="text-center mt-4" style="color:rgba(255,255,255,0.5); font-size:0.8rem;">
+           Indicative prices. Check availability and conditions.
+diff --git a/src/en/jet-ski-rental-mallorca.njk b/src/en/jet-ski-rental-mallorca.njk
+index dd5938d..c53a91d 100644
+--- a/src/en/jet-ski-rental-mallorca.njk
++++ b/src/en/jet-ski-rental-mallorca.njk
+@@ -53,12 +53,6 @@ currentLang: en
+           <span style="font-size:1.8rem;font-weight:800;color:#fff;">2h · 185€</span>
+         </div>
+       </div>
+-      <div class="col-md-4">
+-        <div style="border-radius:16px;background:#1a3a55;padding:2rem;text-align:center;">
+-          <p style="color:rgba(255,255,255,0.8);margin-bottom:0.5rem;">Nautical licence course included</p>
+-          <span style="font-size:1.8rem;font-weight:800;color:#fff;">Pack · 260€</span>
+-        </div>
+-      </div>
+     </div>
+   </div>
+ </section>
+diff --git a/src/en/jet-ski-with-nautical-license-mallorca.njk b/src/en/jet-ski-with-nautical-license-mallorca.njk
+index 1594956..3620519 100644
+--- a/src/en/jet-ski-with-nautical-license-mallorca.njk
++++ b/src/en/jet-ski-with-nautical-license-mallorca.njk
+@@ -1,7 +1,7 @@
+ ---
+ layout: base.njk
+ pageTitle: "Jet Ski Rental with Nautical Licence in Mallorca | JetExperience Baleares"
+-pageDescription: "To rent a jet ski in Mallorca you need a nautical licence. Find out which licence is valid and our special Licence + 2h pack for 260€."
++pageDescription: "To rent a jet ski in Mallorca you need a nautical licence. Find out which licence is valid and what to bring on the day."
+ pageCanonical: "/en/jet-ski-with-nautical-license-mallorca/"
+ permalink: /en/jet-ski-with-nautical-license-mallorca/
+ langEs: "/moto-agua-con-licencia-mallorca/"
+@@ -23,8 +23,6 @@ currentLang: en
+       <div class="col-lg-7">
+         <h1 class="section-title mb-4">Jet Ski Rental with Nautical Licence in Mallorca</h1>
+         <p class="feature-desc">In Spain, riding a jet ski requires a navigation licence or higher nautical qualification. At JetExperience Baleares we verify documentation before every departure to ensure a safe and legal experience.</p>
+-        <p class="feature-desc">If you don't have a licence yet, we have the perfect pack: a certified nautical licence course plus 2 hours of rental for just 260€.</p>
+-        <a href="#pack-licence" class="btn-cta mt-3">See licence + rental pack</a>
+       </div>
+       <div class="col-lg-5">
+         <img src="/assets/img/galeria-01-new.jpg" alt="Jet ski with nautical licence in Mallorca"
+@@ -47,16 +45,6 @@ currentLang: en
+   </div>
+ </section>
+ 
+-<section id="pack-licence" class="py-section bg-dark-brand">
+-  <div class="container text-center">
+-    <span class="section-label" style="color:rgba(255,255,255,0.7)">Special offer</span>
+-    <h2 class="section-title section-title--light mb-3">Nautical Licence + 2h Jet Ski Pack</h2>
+-    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;max-width:560px;margin:0 auto 1.5rem;">Certified nautical licence course plus 2 hours of rental in Cala Millor. All for 260€.</p>
+-    <div style="font-size:3rem;font-weight:800;color:#fff;margin-bottom:1.5rem;">260€</div>
+-    <a href="#" class="btn-cta btn-cta--dark" data-whatsapp>Check availability →</a>
+-  </div>
+-</section>
+-
+ <section class="py-section bg-light-brand">
+   <div class="container">
+     <div class="row">
+@@ -76,7 +64,7 @@ currentLang: en
+               <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqS2b">Can I rent a jet ski without a licence?</button>
+             </h3>
+             <div id="faqS2b" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">You cannot ride without a licence. However, you can ride as a passenger with a licensed rider. If you want to ride yourself, we recommend our Licence + 2h Jet Ski Pack for 260€.</div>
++              <div class="accordion-body faq-body">You cannot ride without a licence. However, you can ride as a passenger with a licensed rider.</div>
+             </div>
+           </div>
+           <div class="accordion-item faq-item">
+@@ -84,7 +72,7 @@ currentLang: en
+               <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqS2c">Where can I get a nautical licence in Mallorca?</button>
+             </h3>
+             <div id="faqS2c" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">There are several nautical schools in Mallorca offering the Navigation Licence course. We also offer the complete pack: certified course + 2 hours of rental. Ask us via WhatsApp.</div>
++              <div class="accordion-body faq-body">There are several nautical schools in Mallorca offering the Navigation Licence course.</div>
+             </div>
+           </div>
+         </div>
+diff --git a/src/en/sea-doo-rental-mallorca.njk b/src/en/sea-doo-rental-mallorca.njk
+index e459e0f..bef1d90 100644
+--- a/src/en/sea-doo-rental-mallorca.njk
++++ b/src/en/sea-doo-rental-mallorca.njk
+@@ -68,7 +68,6 @@ currentLang: en
+         <ul class="checklist">
+           <li class="checklist__item checklist__item--yes">1 hour — 110€</li>
+           <li class="checklist__item checklist__item--yes">2 hours — 185€</li>
+-          <li class="checklist__item checklist__item--yes">Licence + 2h Pack — 260€</li>
+         </ul>
+       </div>
+     </div>
+diff --git a/src/index.njk b/src/index.njk
+index c2ab5b6..e779e1f 100644
+--- a/src/index.njk
++++ b/src/index.njk
+@@ -154,25 +154,6 @@ currentLang: es
+             </div>
+           </div>
+ 
+-          <!-- Card 4: Oferta Especial -->
+-          <div class="exp-card--offer">
+-            <div class="exp-card--offer__img-wrap">
+-              <img src="/assets/img/oferta-especial.jpg"
+-                alt="Oferta especial 260€ curso licencia náutica + 2h moto de agua Mallorca" loading="lazy"
+-                width="1024" height="1355"
+-                class="exp-card--offer__img">
+-            </div>
+-            <div class="exp-card--offer__overlay"></div>
+-            <span class="exp-card--offer__badge" data-i18n="exp.oferta.badge">🔥 OFERTA</span>
+-            <div class="exp-card--offer__strip">
+-              <p class="exp-card--offer__title" data-i18n="exp.oferta.title">Oferta Especial</p>
+-              <a href="#" class="btn-whatsapp" data-whatsapp data-exp-key="oferta" data-i18n="exp.oferta.cta">
+-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+-                Consultar →
+-              </a>
+-            </div>
+-          </div>
+-
+         </div>
+         <p class="text-center mt-4" style="color:rgba(255,255,255,0.5); font-size:0.8rem;" data-i18n="exp.note">
+           Precios orientativos. Consulta disponibilidad y condiciones.
+diff --git a/src/moto-agua-con-licencia-mallorca.njk b/src/moto-agua-con-licencia-mallorca.njk
+index 1a48dfa..580029f 100644
+--- a/src/moto-agua-con-licencia-mallorca.njk
++++ b/src/moto-agua-con-licencia-mallorca.njk
+@@ -1,7 +1,7 @@
+ ---
+ layout: base.njk
+ pageTitle: "Alquiler de Moto de Agua con Licencia Náutica en Mallorca | JetExperience Baleares"
+-pageDescription: "Para alquilar una moto de agua en Mallorca necesitas licencia náutica. Descubre qué licencia es válida y nuestro pack especial Licencia + 2h por 260€."
++pageDescription: "Para alquilar una moto de agua en Mallorca necesitas licencia náutica. Descubre qué licencia es válida y qué debes llevar el día del alquiler."
+ pageCanonical: "/moto-agua-con-licencia-mallorca/"
+ permalink: /moto-agua-con-licencia-mallorca/
+ langEs: "/moto-agua-con-licencia-mallorca/"
+@@ -23,8 +23,6 @@ currentLang: es
+       <div class="col-lg-7">
+         <h1 class="section-title mb-4">Alquiler de Moto de Agua con Licencia Náutica en Mallorca</h1>
+         <p class="feature-desc">En España, pilotar una moto de agua requiere licencia de navegación o titulación náutica superior. En JetExperience Baleares verificamos la documentación antes de cada salida para garantizar una experiencia segura y legal.</p>
+-        <p class="feature-desc">Si aún no tienes licencia, tenemos el pack perfecto: curso de licencia náutica homologada más 2 horas de alquiler por solo 260€.</p>
+-        <a href="#pack-licencia" class="btn-cta mt-3">Ver pack licencia + alquiler</a>
+       </div>
+       <div class="col-lg-5">
+         <img src="/assets/img/galeria-01-new.jpg"
+@@ -49,16 +47,6 @@ currentLang: es
+   </div>
+ </section>
+ 
+-<section id="pack-licencia" class="py-section bg-dark-brand">
+-  <div class="container text-center">
+-    <span class="section-label" style="color:rgba(255,255,255,0.7)">Oferta especial</span>
+-    <h2 class="section-title section-title--light mb-3">Pack Licencia Náutica + 2h Jet Ski</h2>
+-    <p style="color:rgba(255,255,255,0.8);font-size:1.1rem;max-width:560px;margin:0 auto 1.5rem;">Curso homologado de licencia náutica incluido más 2 horas de alquiler en Cala Millor. Todo por 260€.</p>
+-    <div style="font-size:3rem;font-weight:800;color:#fff;margin-bottom:1.5rem;">260€</div>
+-    <a href="#" class="btn-cta btn-cta--dark" data-whatsapp>Consultar disponibilidad →</a>
+-  </div>
+-</section>
+-
+ <section class="py-section bg-light-brand">
+   <div class="container">
+     <div class="row">
+@@ -84,7 +72,7 @@ currentLang: es
+               </button>
+             </h3>
+             <div id="faqS2b" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">No es posible pilotar sin licencia. Sin embargo, puedes ir como pasajero acompañando a alguien con licencia. Si quieres pilotar tú, te recomendamos nuestro pack Licencia + 2h Jet Ski por 260€.</div>
++              <div class="accordion-body faq-body">No es posible pilotar sin licencia. Sin embargo, puedes ir como pasajero acompañando a alguien con licencia.</div>
+             </div>
+           </div>
+           <div class="accordion-item faq-item">
+@@ -94,7 +82,7 @@ currentLang: es
+               </button>
+             </h3>
+             <div id="faqS2c" class="accordion-collapse collapse" data-bs-parent="#faqService2">
+-              <div class="accordion-body faq-body">Existen varias escuelas náuticas en Mallorca que ofrecen el curso de Licencia de Navegación. Nosotros también ofrecemos el pack completo: curso homologado + 2 horas de alquiler. Consúltanos por WhatsApp.</div>
++              <div class="accordion-body faq-body">Existen varias escuelas náuticas en Mallorca que ofrecen el curso de Licencia de Navegación.</div>
+             </div>
+           </div>
+         </div>
+diff --git a/src/rutas.njk b/src/rutas.njk
+index dd55fcf..990f66d 100644
+--- a/src/rutas.njk
++++ b/src/rutas.njk
+@@ -253,7 +253,7 @@ currentLang: es
+               </button>
+             </h3>
+             <div id="faqR1" class="accordion-collapse collapse" data-bs-parent="#faqRoutes">
+-              <div class="accordion-body faq-body">Sí, para pilotar necesitas licencia de navegación o titulación superior. Si no la tienes, puedes ir como pasajero acompañando a alguien con licencia, o consultarnos por nuestro pack de curso de licencia náutica.</div>
++              <div class="accordion-body faq-body">Sí, para pilotar necesitas licencia de navegación o titulación superior. Si no la tienes, puedes ir como pasajero acompañando a alguien con licencia.</div>
+             </div>
+           </div>
+ 
+@@ -374,7 +374,7 @@ currentLang: es
+         {
+           "@type": "Question",
+           "name": "¿Hace falta licencia?",
+-          "acceptedAnswer": {"@type": "Answer", "text": "Sí, para pilotar necesitas licencia de navegación o titulación superior. Si no la tienes, puedes ir como pasajero acompañando a alguien con licencia, o consultarnos por nuestro pack de curso de licencia náutica."}
++          "acceptedAnswer": {"@type": "Answer", "text": "Sí, para pilotar necesitas licencia de navegación o titulación superior. Si no la tienes, puedes ir como pasajero acompañando a alguien con licencia."}
+         },
+         {
+           "@type": "Question",
