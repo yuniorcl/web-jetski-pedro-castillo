@@ -41,13 +41,12 @@ function updateLangButtons() {
 
 function buildExpHref(expKey) {
   if (typeof CONFIG === 'undefined') return '#';
-  const title    = translations[`exp.${expKey}.title`]    || expKey;
   const price    = translations[`exp.${expKey}.price`]    || '';
   const msgLabel = currentLang === 'en'
-    ? `Hi, I'd like to book: ${title} (${price}). Can you confirm availability?`
+    ? `Hi, I'd like to book: (${price}). Can you confirm availability?`
     : currentLang === 'de'
-    ? `Hallo, ich möchte buchen: ${title} (${price}). Können Sie die Verfügbarkeit bestätigen?`
-    : `Hola, me gustaría reservar: ${title} (${price}). ¿Podéis confirmarme disponibilidad?`;
+    ? `Hallo, ich möchte buchen: (${price}). Können Sie die Verfügbarkeit bestätigen?`
+    : `Hola, me gustaría reservar: (${price}). ¿Podéis confirmarme disponibilidad?`;
   return `https://api.whatsapp.com/send/?phone=${CONFIG.whatsapp}&text=${encodeURIComponent(msgLabel)}`;
 }
 
